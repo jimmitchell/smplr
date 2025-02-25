@@ -1,0 +1,56 @@
+{
+	"version": "2.3.4",
+	"title": "mnml",
+	"description": "A minimal, simple and clean Micro.blog theme.",
+	"fields": [
+		{
+		  "field": "params.custom_avatar",
+		  "label": "Custom header icon",
+		  "type": "text",
+		  "placeholder": "Enter a full URL to an image"
+		},
+		{
+		  "field": "params.fediverse_creator",
+		  "label": "Fediverse creator",
+		  "type": "text",
+		  "placeholder": "@username@mastodon.instance"
+		},
+		{
+		  "field": "params.home_category",
+		  "label": "Home page category",
+		  "type": "text",
+		  "placeholder": "Set a single home page category. Leave blank for all posts."
+		},
+		{
+		  "field": "params.show_full_post",
+		  "label": "Show full posts on homepage",
+		  "type": "boolean"
+		},
+		{
+		  "field": "params.photos_category",
+		  "label": "Photos category",
+		  "type": "text",
+		  "placeholder": "Set a single photo category. Leave blank for all images."
+		},
+		{
+		  "field": "params.masonry_layout",
+		  "label": "Use photos masonry layout",
+		  "type": "boolean"
+		},
+		{
+		  "field": "params.full_width_photos",
+		  "label": "Show wider photos page",
+		  "type": "boolean"
+		},
+		{
+		  "field": "params.show_categories",
+		  "label": "Show categories on archives page",
+		  "type": "boolean"
+		},
+		{
+		  "field": "params.hide_credit",
+		  "label": "Hide footer credits",
+		  "type": "boolean"
+		}
+	]
+}

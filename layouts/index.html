@@ -1,0 +1,46 @@
+{{ define "main" }}
+<main>
+    {{- $allPages := where .Site.Pages.ByDate.Reverse "Type" "post" }}
+    {{- $home_category := .Site.Params.home_category }}
+    {{- $pages := $allPages }}
+    {{- if $home_category }}
+        {{- $pages = where $allPages "Params.categories" "intersect" (slice $home_category) }}
+    {{- end }}
+    {{- $paginator := .Paginate $pages (index .Site.Params "archive-paginate" | default 20) }}
+    {{- range $paginator.Pages  }}
+    <article>
+    {{- if .Title }}
+        <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <p class="post-date">{{ .Date.Format "Monday, January 2, 2006" }}</p>
+        {{- if .Site.Params.show_full_post }}
+        {{ .Content }}
+        {{- else }}
+        <p>{{ .Summary | safeHTML }}</p>
+        <p><a href="{{ .Permalink }}">Continue reading →</a></p>
+        {{- end }}
+    {{- else if in .RawContent "<!--more-->"}}
+        <p class="post-date btm-margin"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }} →</a></p>
+        {{- if .Site.Params.show_full_post }}
+        {{ .Content }}
+        {{- else }}
+        <p>{{ .Summary | safeHTML }}</p>
+        {{- if .Truncated }}
+        <p><a href="{{ .Permalink }}">Continue reading →</a></p>
+        {{- end }}
+        {{- end }}
+    {{- else }}
+        <p class="post-date btm-margin"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }} →</a></p>
+        {{ .Content }}
+    {{- end }}
+    </article>
+    {{- end }}
+    {{- if or ($paginator.HasNext) ($paginator.HasPrev) }}
+    <nav class="main-nav">
+        <ul>
+            <li>{{ if $paginator.HasNext }}<a href="{{ $paginator.Next.URL }}">← Older</a>{{ end }}</li>
+            <li>{{ if $paginator.HasPrev }}<a href="{{ $paginator.Prev.URL }}">Newer →</a>{{ end }}</li>
+        </ul>
+    </nav>
+    {{- end }}
+</main>
+{{ end }}

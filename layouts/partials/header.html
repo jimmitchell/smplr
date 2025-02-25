@@ -1,0 +1,20 @@
+<header class="header">
+    <nav class="site-nav">
+        {{- $avatar := .Site.Params.custom_avatar }}
+        <h1 class="site-title"><a href="/"><img id="avatar" class="u-photo" src="{{ if $avatar }}{{ $avatar }}{{ else }}{{ .Site.Author.avatar }}{{ end }}" width="36" height="36" />{{ .Site.Title }}</a></h1>
+        <ul class="nav-menu">
+        {{- range .Site.Menus.main }}
+            {{- if .Page.Params.redirect_url }}
+            <li class="nav-item"><a href="{{ .Page.Params.redirect_url }}">{{ .Name }}</a></li>
+            {{- else }}
+            <li class="nav-item"><a href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a></li>
+            {{- end }}
+        {{- end }}
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</header>

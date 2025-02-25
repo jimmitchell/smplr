@@ -1,0 +1,67 @@
+<ul class="masonry-grid">
+{{- $list := where .Site.Pages ".Params.photos" "!=" nil -}}
+{{- $category := index .Site.Taxonomies.categories (lower .Site.Params.photos_category) -}}
+{{- if $category }}
+	{{- $list = $category.Pages -}}
+{{ end }}
+{{- $len := (len $list) -}}
+{{ range $index, $value := $list }}
+	{{- if .Params.photos -}}
+	<li>
+		<a href="{{ .Permalink }}">
+			{{ range first 1 .Params.photos }}
+				<img src="{{ . }}" loading="lazy" />
+			{{ end }}
+		</a>
+	</li>
+	{{- end -}}
+{{- end -}}
+</ul>
+<script>
+	function debounce(func, wait) {
+		let timeout;
+		return function executedFunction(...args) {
+			const later = () => {
+				clearTimeout(timeout);
+				func(...args);
+			};
+			clearTimeout(timeout);
+			timeout = setTimeout(later, wait);
+		};
+	}
+	function handleImage(imageElement) {
+		if (!imageElement) return;
+		const listItem = imageElement.closest('li');
+		imageElement.addEventListener('load', function() {
+			listItem.classList.add('loaded');
+			imageElement.classList.add('visible');
+		});
+		imageElement.addEventListener('error', function() {
+			listItem.innerHTML = 'Failed to load image';
+			listItem.style.padding = '2rem';
+			listItem.style.textAlign = 'center';
+		});
+		if (imageElement.complete) {
+			listItem.classList.add('loaded');
+			imageElement.classList.add('visible');
+		}
+	}
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+				const img = entry.target;
+				handleImage(img);
+				observer.unobserve(img);
+			}
+		});
+	}, {
+		rootMargin: '50px'
+	});
+	document.querySelectorAll('.masonry-grid img').forEach(img => {
+		if (img.loading === 'lazy') {
+			observer.observe(img);
+		} else {
+			handleImage(img);
+		}
+	});
+</script>

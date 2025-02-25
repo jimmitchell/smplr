@@ -1,0 +1,33 @@
+{{ define "main" }}
+<main>
+	<h2 class="page-title">Replies</h2>
+	{{ if .Site.Params.paginate_replies }}
+		{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "reply") }}
+		{{ $list := $paginator.Pages }}
+		{{ range $list }}
+		<article>
+			{{ if .Title }}
+			<h3 class="post-title"><a href="{{ .Permalink }}">{{ .Title }} →</a></h3>
+			<p class="post-date">{{ .Date.Format "Monday, January 2, 2006" }}</p>
+			{{ else }}
+			<p class="post-date btm-margin"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }} →</a></p>
+			{{ end }}
+			{{ .Content }}
+		</article>
+		{{ end }}
+	{{ else }}
+		{{ $list := first 50 (where .Data.Pages.ByDate.Reverse "Type" "reply") }}
+		{{ range $list }}
+		<article>
+			{{ if .Title }}
+			<h3 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+			<p class="post-date">{{ .Date.Format "Monday, January 2, 2006" }}</p>
+			{{ else }}
+			<p class="post-date btm-margin"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }} →</a></p>
+			{{ end }}
+			{{ .Content }}
+		</article>
+		{{ end }}
+	{{ end }}
+</main>
+{{ end }}

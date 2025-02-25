@@ -1,0 +1,26 @@
+@font-face {
+  font-display: swap;
+  font-family: "GTW"; 
+  src: url('../fonts/GT-W-Regular.woff2') format('woff2'), url('../fonts/GT-W-Regular.woff') format('woff');
+  font-weight: 400;
+}
+@font-face {
+  font-display: swap;
+  font-family: "GTW"; 
+  src: url('../fonts/GT-W-Regular-Oblique.woff2') format('woff2'), url('../fonts/GT-W-Regular-Oblique.woff') format('woff');
+  font-style: italic;
+  font-weight: 400;
+}
+@font-face {
+  font-display: swap;
+  font-family: "GTW"; 
+  src: url('../fonts/GT-W-Bold.woff2') format('woff2'), url('../fonts/GT-W-Bold.woff') format('woff');
+  font-weight: 700;
+}
+@font-face {
+  font-display: swap;
+  font-family: "GTW"; 
+  src: url('../fonts/GT-W-Bold-Oblique.woff2') format('woff2'), url('../fonts/GT-W-Bold-Oblique.woff') format('woff');
+  font-style: italic;
+  font-weight: 700;
+}

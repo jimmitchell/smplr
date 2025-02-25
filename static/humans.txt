@@ -1,0 +1,16 @@
+/* DESIGNER */
+
+Name: Jim Mitchell
+Web: https://jimmitchell.org
+Contact: hello [at] jimmitchell [dot] org
+Micro.blog: @jimmitchell
+Mastodon: https://social.jimmitchell.org/@jim
+Github: https://github.com/jimmitchell
+From: Huntington Beach, CA, USA
+
+/* SITE */
+
+Standards: HTML5, CSS3
+Software: Hugo, Git, Nova, Pixelmator Pro
+Design Repo: https://github.com/jimmitchell/mnml
+Hosted by: Micro.blog

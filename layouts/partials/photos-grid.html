@@ -1,0 +1,83 @@
+<ul class="grid">
+{{- $list := where .Site.Pages ".Params.photos" "!=" nil -}}
+{{- $category := index .Site.Taxonomies.categories (lower .Site.Params.photos_category) -}}
+{{- if $category }}
+	{{- $list = $category.Pages -}}
+{{ end }}
+{{- $len := (len $list) -}}
+{{ range $index, $value := $list }}
+	{{- if .Params.photos -}}
+	<li>
+		<a href="{{ .Permalink }}">
+			{{ range first 1 .Params.photos }}
+				<img src="{{ . }}" loading="lazy" />
+			{{ end }}
+		</a>
+	</li>
+	{{- end -}}
+{{- end -}}
+</ul>
+<script>
+	const elementsToResize = new Set();
+	function debounce(func, wait) {
+		let timeout;
+		return function executedFunction(...args) {
+			const later = () => {
+				clearTimeout(timeout);
+				func(...args);
+			};
+			clearTimeout(timeout);
+			timeout = setTimeout(later, wait);
+		};
+	}
+	function resizeAllElements() {
+		elementsToResize.forEach(element => {
+			if (element.isConnected) {
+				element.style.height = element.offsetWidth + 'px';
+			} else {
+				elementsToResize.delete(element);
+			}
+		});
+	}
+	const debouncedResize = debounce(resizeAllElements, 100);
+	window.addEventListener('resize', debouncedResize);
+	function resizeImageHeight(imageElement) {
+		if (!imageElement) return;
+		elementsToResize.add(imageElement);
+		const listItem = imageElement.closest('li');
+		imageElement.addEventListener('load', function() {
+			imageElement.style.height = imageElement.offsetWidth + 'px';
+			listItem.classList.add('loaded');
+			imageElement.classList.add('visible');
+		});
+		imageElement.addEventListener('error', function() {
+			elementsToResize.delete(imageElement);
+			listItem.innerHTML = 'Failed to load image';
+			listItem.style.padding = '2rem';
+			listItem.style.textAlign = 'center';
+		});
+		if (imageElement.complete) {
+			imageElement.style.height = imageElement.offsetWidth + 'px';
+			listItem.classList.add('loaded');
+			imageElement.classList.add('visible');
+		}
+	}
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+				const img = entry.target;
+				resizeImageHeight(img);
+				observer.unobserve(img);
+			}
+		});
+	}, {
+		rootMargin: '50px'
+	});
+	document.querySelectorAll('.grid img').forEach(img => {
+		if (img.loading === 'lazy') {
+			observer.observe(img);
+		} else {
+			resizeImageHeight(img);
+		}
+	});
+</script>
