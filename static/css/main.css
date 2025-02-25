@@ -7,7 +7,7 @@
   --accent-2: #d4d4d6;
   --accent-3: #93959a;
   --highlight: #e3e3e6;
-  --sans-serif-font: 'GTW', -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --sans-serif-font: -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
@@ -842,6 +842,72 @@ img.bookshelf__cover {
 }
 
 
+
+/* Photos stuff */
+main.photos {
+  max-width: var(--site-width);
+  margin: 0 auto;
+}
+
+ul.grid * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul.grid li {
+  margin: 0;
+  padding: 0;
+  border-radius: 1rem;
+  background: var(--accent-1);
+  overflow: hidden;
+  position: relative;
+}
+
+ul.grid li::before {
+  content: "Loading...";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--accent-3);
+}
+
+ul.grid li.loaded::before {
+  display: none;
+}
+
+ul.grid img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  transition: height 0.2s ease;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+ul.grid img.visible {
+  opacity: 1 !important;
+}
+
+ul.grid img:hover {
+  -moz-filter: brightness(70%);
+  -webkit-filter: brightness(70%);
+  filter: brightness(70%);
+  transition: ease-in-out 0.25s;
+}
+
+
+/* media queries */
 @media only screen and (max-width: 768px) {
   body {
     overscroll-behavior: contain;
@@ -934,6 +1000,10 @@ img.bookshelf__cover {
   input.subscribe-submit {
     width: 100%;
     padding: 9px;
+  }
+  
+  ul.grid {
+    grid-template-columns: repeat(2, 1fr);
   }
   
 }

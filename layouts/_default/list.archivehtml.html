@@ -3,15 +3,11 @@
 	<article>
 		<h2 class="page-title">{{ .Title }}</h2>
 		{{- $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
-		{{- if and (.Site.Params.show_categories) (gt (len $list) 0) }}
 		<div class="archive-categories">
-			<div class="category-list">
-				{{ range $list }}
-				<a href="{{ .Permalink }}"><button>{{ .Title }}</button></a>
-				{{ end }}
-			</div>
+			{{ range $list }}
+			<a href="{{ .Permalink }}"><button>{{ .Title }}</button></a>
+			{{ end }}
 		</div>
-		{{- end }}
 		{{- $posts := where  .Site.RegularPages "Type" "post" }}
 		{{- $grouped := $posts.GroupByDate "January 2006" }}
 		{{- range $grouped }}
@@ -19,7 +15,8 @@
 			{{- range .Pages }}
 			<p class="post-date"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }} →</a></p>
 			<div class="entry">
-				<p>{{- if .Title }}<b>{{ .Title }}:</b>&nbsp;{{- end }}{{ .Summary | safeHTML | truncate 300  }}</p>
+				{{- if .Title }}<h3>{{ .Title }}:</h3>{{- end }}
+				<p>{{ .Summary }}</p>
 			</div>
 			{{- end }}
 		{{- end }}

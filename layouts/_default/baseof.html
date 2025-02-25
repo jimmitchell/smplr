@@ -5,7 +5,6 @@
         {{ partial "header.html" . }}
         {{ block "main" . }}{{ end }}
         {{ partial "footer.html" . }}
-        <script defer type="text/javascript" src="{{ "js/menu.js" | relURL }}"></script>
         {{- range .Site.Params.plugins_js -}}
         <script defer type="text/javascript" src="{{ . }}"></script>
         {{- end -}}
