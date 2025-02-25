@@ -323,8 +323,8 @@ main {
 .header {
   width: var(--site-width);
   background: var(--background);
-  z-index: 10000;
   margin: 2rem auto;
+  text-align: center;
 }
 
 .u-photo {
