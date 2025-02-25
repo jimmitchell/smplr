@@ -11,9 +11,7 @@
   --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
-  --header-width: 94rem;
-  --site-width: 64rem;
-  --photos-wide: 120rem;
+  --site-width: 70rem;
 }
 
 @media (prefers-color-scheme: dark) {
