@@ -472,7 +472,6 @@ article ol li {
 .archive-categories button {
   text-decoration: none;
   color: var(--accent-3);
-  border: 1px solid var(--accent-2);
   background-color: var(--accent-1);
   font-size: 1.6rem;
   border-radius: .6rem;
@@ -484,7 +483,6 @@ article ol li {
 
 .archive-categories button:hover,
 .archive-categories button:active {
-  border: 1px solid var(--link);
   background: var(--link);
   color: var(--background);
 }
