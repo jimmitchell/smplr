@@ -465,11 +465,11 @@ article ol li {
   font-weight: 700;
 }
 
-.category-list {
+.archive-categories {
   margin: -1rem 0 6rem;
 }
 
-.category-list button {
+.archive-categories button {
   text-decoration: none;
   color: var(--accent-3);
   border: 1px solid var(--accent-2);
@@ -482,8 +482,8 @@ article ol li {
   line-height: 1.6;
 }
 
-.category-list button:hover,
-.category-list button:active {
+.archive-categories button:hover,
+.archive-categories button:active {
   border: 1px solid var(--link);
   background: var(--link);
   color: var(--background);
@@ -822,7 +822,6 @@ a.tinylytics_webring {
 img.bookshelf__cover {
   border-radius: 0;
 }
-
 
 
 /* Photos stuff */

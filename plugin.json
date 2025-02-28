@@ -10,17 +10,6 @@
 		  "placeholder": "@username@mastodon.instance"
 		},
 		{
-		  "field": "params.home_category",
-		  "label": "Home page category",
-		  "type": "text",
-		  "placeholder": "Set a single home page category. Leave blank for all posts."
-		},
-		{
-		  "field": "params.show_full_post",
-		  "label": "Show full posts on homepage",
-		  "type": "boolean"
-		},
-		{
 		  "field": "params.photos_category",
 		  "label": "Photos category",
 		  "type": "text",
