@@ -472,6 +472,7 @@ article ol li {
 .archive-categories button {
   text-decoration: none;
   color: var(--accent-3);
+  border: none;
   background-color: var(--accent-1);
   font-size: 1.6rem;
   border-radius: .6rem;
