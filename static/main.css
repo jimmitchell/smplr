@@ -11,7 +11,7 @@
   --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
-  --site-width: 60rem;
+  --site-width: 70rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -374,6 +374,8 @@ ul.nav-menu {
   justify-content: space-between;
   align-items: center;
   font-size: 1.6rem;
+  max-width: 50rem;
+  margin: 0 auto;
 }
 
 .nav-item {
