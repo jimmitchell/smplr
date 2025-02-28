@@ -11,7 +11,7 @@
   --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
-  --site-width: 70rem;
+  --site-width: 60rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -400,6 +400,7 @@ single article {
 
 .page-title,
 .post-title {
+  font-size: 3rem;
   margin-top: 1rem;
   margin-bottom: 3rem;
 }
