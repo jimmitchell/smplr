@@ -7,11 +7,12 @@
   --accent-2: #d4d4d6;
   --accent-3: #93959a;
   --highlight: #e3e3e6;
-  --sans-serif-font: -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --title-font: 'DM Sans', -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --body-font: Inter, -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
-  --site-width: 70rem;
+  --site-width: 72rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -70,6 +71,7 @@ strong,
 th,
 td {
   font-weight: var(--font-weight-bold);
+  font: var(--title-font);
 }
 
 #root,
@@ -79,7 +81,7 @@ td {
 
 html {
   font-size: 10px;
-  font-family: var(--sans-serif-font);
+  font-family: var(--body-font);
   scroll-behavior: smooth;
 }
 
