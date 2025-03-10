@@ -340,12 +340,7 @@ main {
 .site-title {
   font-size: 3rem;
   font-weight: 700;
-  margin: 1rem auto 5rem;
-}
-
-.site-title a {
-  padding-top: 3px;
-  display: inline-block;
+  margin: 2rem auto;
 }
 
 .site-title a:link,
@@ -358,18 +353,6 @@ main {
   color: var(--link);
   text-decoration: none;
 }
-
-/*
-.site-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: .75rem 2rem .5rem 2rem;
-  font-size: 1.8rem;
-  margin: 0 auto;
-  max-width: var(--header-width);
-}
-*/
 
 ul.nav-menu {
   list-style: none;
