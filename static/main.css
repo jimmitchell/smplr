@@ -330,14 +330,15 @@ main {
   border-radius: 50%;
   display: inline;
   vertical-align: middle;
-  width: 7rem;
+  width: 8rem;
   height: auto;
-  border: 3px solid var(--accent-1);
+  border: 3px solid var(--accent-2);
 }
 
 .site-title {
   font-size: 3rem;
   font-weight: 700;
+  margin: 1rem auto 5rem;
 }
 
 .site-title a {
