@@ -71,7 +71,7 @@ strong,
 th,
 td {
   font-weight: var(--font-weight-bold);
-  font: var(--title-font);
+  font-family: var(--title-font);
 }
 
 #root,
@@ -341,7 +341,7 @@ main {
   font-size: 3rem;
   font-weight: 700;
   margin: 2rem auto;
-  font: var(--title-font);
+  font-family: var(--title-font);
 }
 
 .site-title a:link,
