@@ -327,13 +327,12 @@ main {
 }
 
 .u-photo {
-  border-radius: .6rem;
+  border-radius: 50%;
   display: inline;
-  margin-right: 8px;
-  margin-top: -3px;
   vertical-align: middle;
-  width: 3.2rem;
+  width: 7rem;
   height: auto;
+  border: 3px solid var(--accent-1);
 }
 
 .site-title {
