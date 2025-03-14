@@ -482,13 +482,6 @@ a.category:active {
   margin-top: 3rem;
 }
 
-.archive-range {
-  border-bottom: 1px solid var(--accent-2);
-  padding-bottom: 0.5rem;
-  margin-bottom: 4rem;
-  font-weight: 700;
-}
-
 .category-list {
   margin: -1rem 0 6rem;
 }
