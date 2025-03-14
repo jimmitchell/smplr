@@ -1,6 +1,7 @@
 {{ define "main" }}
 <main class="photos">
 	<article>
+		<h1 class="page-title">{{ .Title }}</h1>
 		<ul class="grid">
 		{{- $list := where .Site.Pages ".Params.photos" "!=" nil -}}
 		{{- $category := index .Site.Taxonomies.categories (lower .Site.Params.photos_category) -}}
