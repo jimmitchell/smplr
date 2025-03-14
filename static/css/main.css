@@ -517,7 +517,7 @@ a.category:active {
 }
 #guestbooks___guestbook-messages-container > div {
   border: 1px solid var(--accent-2);
-  border-radius: 1rem;
+  border-radius: .6rem;
   margin: 2rem 0;
   padding: 1rem 3rem 2rem;
 }
