@@ -505,6 +505,23 @@ a.category:active {
   color: var(--background);
 }
 
+#guestbooks___guestbook-made-with {
+  color: var(--accent-3);
+}
+#guestbooks___guestbook-messages-container blockquote {
+  border: none;
+  color: var(--text);
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+#guestbooks___guestbook-messages-container > div {
+  border: 1px solid var(--accent-2);
+  border-radius: 1rem;
+  margin: 2rem 0;
+  padding: 1rem 3rem 2rem;
+}
+
 .microblog_narration_button {
   display: inline-block;
   background: var(--accent-1);
