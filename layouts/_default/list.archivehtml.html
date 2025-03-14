@@ -1,13 +1,17 @@
 {{- define "main" }}
 <main class="archive">
 	<article>
-		<h2 class="page-title">{{ .Title }}</h2>
+		<!-- <h1 class="page-title">{{ .Title }}</h1> -->
 		{{- $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+		{{- if and (.Site.Params.show_categories) (gt (len $list) 0) }}
 		<div class="archive-categories">
-			{{ range $list }}
-			<a href="{{ .Permalink }}"><button>{{ .Title }}</button></a>
-			{{ end }}
+			<div class="category-list">
+				{{ range $list }}
+				<a href="{{ .Permalink }}"><button>{{ .Title }}</button></a>
+				{{ end }}
+			</div>
 		</div>
+		{{- end }}
 		{{- $posts := where  .Site.RegularPages "Type" "post" }}
 		{{- $grouped := $posts.GroupByDate "January 2006" }}
 		{{- range $grouped }}
@@ -15,8 +19,7 @@
 			{{- range .Pages }}
 			<p class="post-date"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }} →</a></p>
 			<div class="entry">
-				{{- if .Title }}<h3>{{ .Title }}:</h3>{{- end }}
-				<p>{{ .Summary }}</p>
+				<p>{{- if .Title }}<b>{{ .Title }}:</b>&nbsp;{{- end }}{{ .Summary | safeHTML | truncate 300  }}</p>
 			</div>
 			{{- end }}
 		{{- end }}

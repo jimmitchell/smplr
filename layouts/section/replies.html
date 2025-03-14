@@ -1,6 +1,6 @@
 {{ define "main" }}
 <main>
-	<h2 class="page-title">Replies</h2>
+	<h1 class="page-title">Replies</h1>
 	{{ if .Site.Params.paginate_replies }}
 		{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "reply") }}
 		{{ $list := $paginator.Pages }}

@@ -3,9 +3,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <meta name="view-transition" content="same-origin" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   {{- $creator := .Site.Params.fediverse_creator }}
   {{- if $creator }}
   <meta name="fediverse:creator" content="{{ $creator }}" />
@@ -14,6 +11,6 @@
   <meta name="description" content="{{ (or .Summary .Site.Params.itunes_description) }}">
   <link rel="canonical" href="{{ .Permalink }}">
   <link rel="author" href="humans.txt" />
-  <link rel="stylesheet" href="{{ "main.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
+  <link rel="stylesheet" href="{{ "css/main.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
   {{ partial "microblog_head.html" . }}
 </head>

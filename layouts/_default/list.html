@@ -1,6 +1,6 @@
 {{ define "main" }}
 <main>
-    <h2 class="page-title">{{ .Title }}</h2>
+    <h1 class="page-title">{{ .Title }}</h1>
     {{- $paginator := .Paginate (where .Pages.ByDate.Reverse "Type" "post") (index .Site.Params "archive-paginate" | default 30) }}
     {{- range $paginator.Pages  }}
     <article class="{{ range .Params.categories }}{{ . }}{{ end }}">
@@ -11,22 +11,26 @@
         {{- end }}
         {{- end }}
         {{- if .Title }}
-        <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-        <p class="post-date">{{ .Date.Format "Monday, January 2, 2006" }}</p>
-        {{- else }}
-        <p class="post-date btm-margin"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }} →</a></p>
-        {{- end }}
-        {{- if .Title }}
-            {{ .Summary | safeHTML }}
-            {{- if .Truncated }}
+            <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            <p class="post-date">{{ .Date.Format "Monday, January 2, 2006" }}</p>
+            {{- if .Site.Params.show_full_post }}
+            {{ .Content }}
+            {{- else }}
+            <p>{{ .Summary | safeHTML }}</p>
             <p><a href="{{ .Permalink }}">Continue reading →</a></p>
             {{- end }}
         {{- else if in .RawContent "<!--more-->"}}
+            <p class="post-date btm-margin"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }} →</a></p>
+            {{- if .Site.Params.show_full_post }}
+            {{ .Content }}
+            {{- else }}
             <p>{{ .Summary | safeHTML }}</p>
             {{- if .Truncated }}
             <p><a href="{{ .Permalink }}">Continue reading →</a></p>
             {{- end }}
+            {{- end }}
         {{- else }}
+            <p class="post-date btm-margin"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }} →</a></p>
             {{ .Content }}
         {{- end }}
     </article>

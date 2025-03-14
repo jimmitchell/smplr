@@ -1,19 +1,37 @@
 {{ define "main" }}
 <main>
-    {{- $pages := where .Site.Pages.ByDate.Reverse "Type" "post" }}
+    {{- $allPages := where .Site.Pages.ByDate.Reverse "Type" "post" }}
+    {{- $home_categories := slice }}
+    {{- if .Site.Params.home_category }}
+        {{- range split .Site.Params.home_category "," }}
+            {{- $home_categories = $home_categories | append (trim . " ") }}
+        {{- end }}
+    {{- end }}
+    {{- $pages := $allPages }}
+    {{- if $home_categories }}
+        {{- $pages = where $allPages "Params.categories" "intersect" $home_categories }}
+    {{- end }}
     {{- $paginator := .Paginate $pages (index .Site.Params "archive-paginate" | default 20) }}
     {{- range $paginator.Pages  }}
     <article>
     {{- if .Title }}
         <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
         <p class="post-date">{{ .Date.Format "Monday, January 2, 2006" }}</p>
+        {{- if .Site.Params.show_full_post }}
+        {{ .Content }}
+        {{- else }}
         <p>{{ .Summary | safeHTML }}</p>
         <p><a href="{{ .Permalink }}">Continue reading →</a></p>
+        {{- end }}
     {{- else if in .RawContent "<!--more-->"}}
         <p class="post-date btm-margin"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }} →</a></p>
+        {{- if .Site.Params.show_full_post }}
+        {{ .Content }}
+        {{- else }}
         <p>{{ .Summary | safeHTML }}</p>
         {{- if .Truncated }}
         <p><a href="{{ .Permalink }}">Continue reading →</a></p>
+        {{- end }}
         {{- end }}
     {{- else }}
         <p class="post-date btm-margin"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }} →</a></p>
@@ -21,7 +39,7 @@
     {{- end }}
     </article>
     {{- end }}
-    {{- if or $paginator.HasNext $paginator.HasPrev }}
+    {{- if or ($paginator.HasNext) ($paginator.HasPrev) }}
     <nav class="main-nav">
         <ul>
             <li>{{ if $paginator.HasNext }}<a href="{{ $paginator.Next.URL }}">← Older</a>{{ end }}</li>

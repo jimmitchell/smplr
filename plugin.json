@@ -1,7 +1,7 @@
 {
 	"version": "1.0.0",
 	"title": "smplr",
-	"description": "A simple minimalist Micro.blog theme.",
+	"description": "A simple Micro.blog theme.",
 	"fields": [
 		{
 		  "field": "params.fediverse_creator",
@@ -10,10 +10,26 @@
 		  "placeholder": "@username@mastodon.instance"
 		},
 		{
+		  "field": "params.home_category",
+		  "label": "Home page categories",
+		  "type": "text",
+		  "placeholder": "Home page categories. Leave blank for all posts."
+		},
+		{
 		  "field": "params.photos_category",
 		  "label": "Photos category",
 		  "type": "text",
 		  "placeholder": "Set a single photo category. Leave blank for all images."
+		},
+		{
+		  "field": "params.show_full_post",
+		  "label": "Show full posts on homepage",
+		  "type": "boolean"
+		},
+		{
+		  "field": "params.show_categories",
+		  "label": "Show categories on archives page",
+		  "type": "boolean"
 		}
 	]
 }

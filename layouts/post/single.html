@@ -2,7 +2,7 @@
 <main>
     <article>
         {{- if .Title }}
-        <h2 class="post-title">{{ .Title }}</h2>
+        <h1 class="post-title">{{ .Title }}</h1>
         <p class="post-date">{{ .Date.Format "Monday, January 2, 2006" }}</p>
         {{- else }}
         <p class="post-date btm-margin">{{ .Date.Format "Monday, January 2, 2006" }}</p>
@@ -14,7 +14,6 @@
         {{- if isset .Params "categories" }}
         <p class="categories">
         {{- range $index, $category := .Params.categories }}
-            {{- if $index }} <span>|</span> {{ end }}
             {{- $href := printf "/categories/%s" (urlize $category) | absURL }}
             <a href="{{ $href }}" class="category">{{ $category }}</a>
         {{- end }}
@@ -23,14 +22,6 @@
     </article>
     {{- if .Site.Params.include_conversation }}
         <script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>
-    {{- end }}
-    {{- if or (.NextInSection) (.PrevInSection) }}
-    <nav class="main-nav">
-        <ul>
-            <li>{{ if .PrevInSection }}<a href="{{ .PrevInSection.Permalink }}">← Older</a>{{ end }}</li>
-            <li>{{ if .NextInSection }}<a href="{{ .NextInSection.Permalink }}">Newer →</a>{{ end }}</li>
-        </ul>
-    </nav>
     {{- end }}
 </main>
 {{- end }}
