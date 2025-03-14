@@ -25,11 +25,6 @@
 		  "field": "params.show_full_post",
 		  "label": "Show full posts on homepage",
 		  "type": "boolean"
-		},
-		{
-		  "field": "params.show_categories",
-		  "label": "Show categories on archives page",
-		  "type": "boolean"
 		}
 	]
 }
