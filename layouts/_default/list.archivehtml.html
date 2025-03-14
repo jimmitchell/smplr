@@ -1,9 +1,9 @@
 {{- define "main" }}
 <main class="archive">
 	<article>
-		<!-- <h1 class="page-title">{{ .Title }}</h1> -->
+		<h1 class="page-title">{{ .Title }}</h1>
 		{{- $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
-		{{- if and (.Site.Params.show_categories) (gt (len $list) 0) }}
+		{{- if gt (len $list) 0 }}
 		<div class="archive-categories">
 			<div class="category-list">
 				{{ range $list }}
