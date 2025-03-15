@@ -357,7 +357,6 @@ main {
   justify-content: space-between;
   align-items: center;
   padding: .75rem 2rem .5rem 2rem;
-  font-size: 1.8rem;
   margin: 0 auto;
   max-width: var(--site-width);
 }
@@ -365,6 +364,7 @@ main {
 .site-nav ul {
   list-style: none;
   padding: 0;
+  font-size: 1.8rem;
 }
 
 .hamburger {
@@ -906,11 +906,11 @@ ul.grid img:hover {
   }
   
   .site-nav {
-    font-size: 2rem;
     background: var(--background);
   }
 
   .site-nav ul {
+    font-size: 2rem;
     padding: 4rem 0;
     height: 100dvmax;
     justify-content: start;
