@@ -549,6 +549,7 @@ a.category:active {
   margin-bottom: 1rem;
   padding: 2.3rem 2rem;
   border: 1px solid var(--accent-2);
+  background: var(--accent-1);
   border-radius: .6rem;
 }
 
