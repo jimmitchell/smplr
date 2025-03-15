@@ -548,7 +548,6 @@ a.category:active {
 .microblog_post {
   margin-bottom: 1rem;
   padding: 2.3rem 2rem;
-  border: 1px solid var(--accent-2);
   background: var(--accent-1);
   border-radius: .6rem;
 }
@@ -605,7 +604,6 @@ a.category:active {
 }
 
 .microblog_reply_form {
-  border: 1px solid var(--accent-2);
   background: var(--accent-1);
   padding: 1rem 2rem;
   border-radius: .6rem;
