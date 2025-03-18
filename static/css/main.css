@@ -7,7 +7,7 @@
   --accent-2: hsla(0, 0%, 0%, 0.25);
   --accent-3: hsla(0, 0%, 0%, 0.5);
   --highlight: hsla(0, 0%, 0%, 0.25);
-  --sans-serif-font: Roboto, 'Avenir Next', Avenir, -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --sans-serif-font: 'Avenir Next', Avenir, -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
@@ -98,9 +98,6 @@ body {
   font-kerning: normal;
   -ms-word-wrap: break-word;
   word-wrap: break-word;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: geometricPrecision;
 }
 
 ::-moz-selection {
