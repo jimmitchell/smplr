@@ -98,6 +98,9 @@ body {
   font-kerning: normal;
   -ms-word-wrap: break-word;
   word-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
 }
 
 ::-moz-selection {
