@@ -5,7 +5,7 @@
   --link-hover: #000000;
   --accent-1: #f8f8f8;
   --accent-2: #ccc;
-  --accent-3: #666;
+  --accent-3: #777;
   --highlight: #dedede;
   --body-font: 'Atkinson Hyperlegible Next','Avenir Next', Avenir, -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --headline-font: 'Barlow Semi Condensed','Avenir Next', Avenir, -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;;
@@ -23,7 +23,7 @@
     --link-hover: #fff;
     --accent-1: #3d3d3d;
     --accent-2: #555;
-    --accent-3: #d4d4d4;
+    --accent-3: #ccc;
     --highlight: #555;
   }
 }
