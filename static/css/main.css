@@ -410,8 +410,8 @@ main {
   content: "\f002";
   color: var(--accent-3);
 }
-.nav-item a[href$="/search/"]:after:hover,
-.nav-item a[href$="/search/"]:after:active {
+.nav-item a[href$="/search/"]:hover:after,
+.nav-item a[href$="/search/"]:active:after {
   color: var(--link-hover);
 }
 
