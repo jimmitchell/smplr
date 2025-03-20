@@ -11,7 +11,7 @@
   --headline-font: 'Barlow Semi Condensed','Avenir Next', Avenir, -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;;
   --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   --font-weight-normal: 400;
-  --font-weight-bold: 700;
+  --font-weight-bold: 600;
   --site-width: 70rem;
 }
 
@@ -338,7 +338,7 @@ main {
 
 .site-title {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
   font-family: var(--headline-font);
 }
 
