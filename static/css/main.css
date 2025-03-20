@@ -409,6 +409,7 @@ main {
   font-weight: 900;
   content: "\f002";
   color: var(--accent-3);
+  font-size: 1.5rem;
 }
 .nav-item a[href$="/search/"]:hover:after,
 .nav-item a[href$="/search/"]:active:after {
