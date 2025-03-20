@@ -466,6 +466,10 @@ single article {
   font-size: 1.6rem;
 }
 
+.sep {
+  margin: 0 1rem;
+}
+
 article img,
 article video {
   max-width: 100%;
