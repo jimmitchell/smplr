@@ -372,6 +372,10 @@ main {
   font-size: 1.6rem;
 }
 
+
+.nav-item a[href$="/search/"] {
+  text-indent: -9999px;
+}
 .nav-item a[href$="/search/"],
 .nav-item a[href$="/search/"]:after {
   font-family: "Font Awesome 6 Free";
