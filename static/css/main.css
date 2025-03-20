@@ -7,8 +7,8 @@
   --accent-2: #ccc;
   --accent-3: #777;
   --highlight: #dedede;
-  --body-font: 'Atkinson Hyperlegible Next','Avenir Next', Avenir, -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --headline-font: 'Barlow Semi Condensed','Avenir Next', Avenir, -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+  --primary-font: 'Atkinson Hyperlegible Next', -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --secondary-font: 'Barlow Semi Condensed', -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;;
   --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   --font-weight-normal: 400;
   --font-weight-bold: 600;
@@ -80,7 +80,7 @@ td {
 
 html {
   font-size: 10px;
-  font-family: var(--body-font);
+  font-family: var(--primary-font);
   scroll-behavior: smooth;
 }
 
@@ -135,7 +135,7 @@ h5,
 h6 {
   line-height: 1.2;
   font-weight: var(--font-weight-bold);
-  font-family: var(--headline-font);
+  font-family: var(--secondary-font);
 }
 
 h1 {
@@ -210,7 +210,7 @@ table {
 th {
   font-weight: var(--font-weight-bold);
   background: var(--accent-1);
-  font-family: var(--headline-font);
+  font-family: var(--secondary-font);
 }
 
 td {
@@ -274,7 +274,7 @@ mark {
 input[type=button],
 input[type=submit] {
   background-color: var(--accent-2);
-  font-family: var(--headline-font);
+  font-family: var(--secondary-font);
   border: none;
   color: var(--text);
   padding: 6px 12px;
@@ -339,7 +339,7 @@ main {
 .site-title {
   font-size: 2rem;
   font-weight: var(--font-weight-bold);
-  font-family: var(--headline-font);
+  font-family: var(--secondary-font);
 }
 
 .site-title a {
@@ -462,7 +462,7 @@ single article {
 
 .post-date {
   color: var(--accent-3);
-  font-family: var(--headline-font);
+  font-family: var(--secondary-font);
   font-size: 1.6rem;
 }
 
@@ -485,10 +485,10 @@ a.category:visited {
   color: var(--accent-3);
   border: 1px solid var(--accent-1);
   background-color: var(--accent-1);
-  font-size: 1.6rem;
-  font-family: var(--headline-font);
+  font-size: 1.4rem;
+  font-family: var(--secondary-font);
   border-radius: 2rem;
-  padding: 1px 8px;
+  padding: 0 6px;
   display: inline-block;
   margin: 0 1px 5px 0;
   line-height: 1.6;
@@ -518,13 +518,13 @@ a.category:active {
   color: var(--accent-3);
   border: 1px solid var(--accent-1);
   background-color: var(--accent-1);
-  font-family: var(--headline-font);
+  font-family: var(--secondary-font);
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   border-radius: 2rem;
-  padding: 2px 10px;
+  padding: 0 6px;
   display: inline-block;
-  margin: 0 1px 5px 0;
+  margin: 0 0 5px 0;
   line-height: 1.6;
 }
 
@@ -587,12 +587,12 @@ a.category:active {
 
 .microblog_user {
   font-weight: var(--font-weight-bold);
-  font-family: var(--headline-font);
+  font-family: var(--secondary-font);
 }
 
 .microblog_fullname {
   font-weight: var(--font-weight-bold);
-  font-family: var(--headline-font);
+  font-family: var(--secondary-font);
   font-size: 1.6rem;
   margin-left: 6px;
   display: inline-block;
@@ -620,7 +620,7 @@ a.category:active {
   color: var(--accent-3);
   font-size: 1.6rem;
   text-decoration: none;
-  font-family: var(--headline-font);
+  font-family: var(--secondary-font);
 }
 
 .reply-buttons {
@@ -677,7 +677,7 @@ a.category:active {
   font-size: 1.6rem;
   margin-top: -.75rem;
   margin-bottom: .75rem;
-  font-family: var(--headline-font);
+  font-family: var(--secondary-font);
 }
 
 input.subscribe-input {
@@ -734,7 +734,7 @@ footer {
   text-align: center;
   max-width: var(--site-width);
   margin: 0 auto 2rem auto;
-  font-family: var(--headline-font);
+  font-family: var(--secondary-font);
 }
 
 footer p {
