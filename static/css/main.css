@@ -373,19 +373,20 @@ main {
 }
 
 
-.nav-item a[href$="/search/"] {
+.nav-menu a[href$="/search/"] {
   text-indent: -9999px;
 }
-.menu a[href$="/search/"]:after {
+.nav-menu a[href$="/search/"]:after {
   text-indent: 0;
   display: block;
   float: right;
 }
-.nav-item a[href$="/search/"]:after {
+.nav-menu a[href$="/search/"],
+.nav-menu a[href$="/search/"]:after {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
 }
-.nav-item a[href$="/search/"]:after {
+.nav-menu a[href$="/search/"]:after {
   content: "\f002";
 }
 
@@ -941,11 +942,11 @@ ul.grid img:hover {
     margin: 1.5rem 0;
   }
   
-  .nav-item a[href$="/search/"] {
+  .nav-menu a[href$="/search/"] {
     text-indent: 0;
     color: var(--text-main-color);
   }
-  .nav-item a[href$="/search/"]:after {
+  .nav-menu a[href$="/search/"]:after {
     content: "";
     float: none;
   }
