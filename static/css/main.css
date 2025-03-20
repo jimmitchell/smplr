@@ -563,12 +563,12 @@ a.category:active {
 
 .microblog_user {
   font-weight: var(--font-weight-bold);
-  ont-fam: var(--headline-font);
+  font-family: var(--headline-font);
 }
 
 .microblog_fullname {
   font-weight: var(--font-weight-bold);
-  font-fam: var(--headline-font);
+  font-family: var(--headline-font);
   font-size: 1.6rem;
   margin-left: 6px;
   display: inline-block;
