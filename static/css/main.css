@@ -8,7 +8,7 @@
   --accent-3: #666;
   --highlight: #dedede;
   --body-font: 'Atkinson Hyperlegible Next','Avenir Next', Avenir, -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --headline-font: 'Onest','Avenir Next', Avenir, -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+  --headline-font: 'Mona Sans','Avenir Next', Avenir, -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;;
   --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
@@ -563,10 +563,12 @@ a.category:active {
 
 .microblog_user {
   font-weight: var(--font-weight-bold);
+  ont-fam: var(--headline-font);
 }
 
 .microblog_fullname {
   font-weight: var(--font-weight-bold);
+  font-fam: var(--headline-font);
   font-size: 1.6rem;
   margin-left: 6px;
   display: inline-block;
@@ -726,38 +728,7 @@ footer p {
 .social a:active {
   color: var(--link-hover);
 }
-/*
-.tinylytics_kudos,
-.tiny_hits,
-a.conversation-on-mb,
-a.reply-on-mastodon,
-a.reply-by-email {
-  text-decoration: none;
-  color: var(--accent-3);
-  border: 1px solid var(--accent-2);
-  background-color: var(--accent-1);
-  font-size: 1.4rem;
-  border-radius: .6rem;
-  padding: 2px 10px;
-  display: inline-block;
-  margin: 2px 0;
-  line-height: 1.6;
-}
 
-.tinylytics_kudos:hover,
-a.conversation-on-mb:hover,
-a.reply-on-mastodon:hover,
-.tinylytics_kudos:active,
-a.reply-by-email:hover,
-a.reply-by-email:active,
-a.conversation-on-mb:active,
-a.reply-on-mastodon:active,
-.did_select {
-  border: 1px solid var(--text);
-  background: var(--text);
-  color: var(--background);
-}
-*/
 .tiny_webring {
   display: block;
 }
