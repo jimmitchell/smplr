@@ -424,6 +424,7 @@ single article {
 
 .btm-margin {
   margin-bottom: -10px;
+  font-size: 1.4rem;
 }
 
 .post-title {
@@ -443,7 +444,7 @@ single article {
 .post-date {
   color: var(--accent-3);
   font-family: var(--headline-font);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 article img,
