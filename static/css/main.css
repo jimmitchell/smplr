@@ -391,6 +391,7 @@ main {
   justify-content: space-between;
   align-items: center;
   font-size: 1.6rem;
+  font-family: var(--secondary-font);
 }
 
 .nav-item {
