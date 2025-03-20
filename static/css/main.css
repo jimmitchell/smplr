@@ -1,14 +1,14 @@
 :root {
   --background: #fff;
   --text: #333;
-  --link: #0d88d8;
+  --link: #0176d3;
   --link-hover: #000000;
   --accent-1: #f8f8f8;
   --accent-2: #ccc;
   --accent-3: #666;
   --highlight: #dedede;
   --body-font: 'Atkinson Hyperlegible Next','Avenir Next', Avenir, -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --headline-font: 'Encode Sans Expanded','Avenir Next', Avenir, -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+  --headline-font: 'Onest','Avenir Next', Avenir, -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;;
   --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
