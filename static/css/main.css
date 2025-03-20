@@ -1,7 +1,7 @@
 :root {
   --background: #fff;
   --text: #333;
-  --link: #8839ef;
+  --link: #00abbf;
   --link-hover: #000000;
   --accent-1: #f8f8f8;
   --accent-2: #ccc;
@@ -19,7 +19,7 @@
   :root {
     --background: #181818;
     --text: #f8f8f8;
-    --link: #cba6f7;
+    --link: #59d7e6;
     --link-hover: #fff;
     --accent-1: #3d3d3d;
     --accent-2: #555;
