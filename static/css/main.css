@@ -424,7 +424,7 @@ single article {
 
 .btm-margin {
   margin-bottom: -10px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 .post-title {
@@ -466,7 +466,7 @@ a.category:visited {
   color: var(--accent-3);
   border: 1px solid var(--accent-1);
   background-color: var(--accent-1);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-family: var(--headline-font);
   border-radius: 2rem;
   padding: 1px 8px;
@@ -501,7 +501,7 @@ a.category:active {
   background-color: var(--accent-1);
   font-family: var(--headline-font);
   font-weight: 400;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   border-radius: 2rem;
   padding: 2px 10px;
   display: inline-block;
@@ -599,7 +599,7 @@ a.category:active {
 .microblog_time a,
 .microblog_time a:visited {
   color: var(--accent-3);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   text-decoration: none;
   font-family: var(--headline-font);
 }
@@ -710,7 +710,7 @@ main.archive .entry p {
 
 footer {
   color: var(--accent-3);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   padding: 0.5rem 2rem 3rem 2rem;
   text-align: center;
   max-width: var(--site-width);
