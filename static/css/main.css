@@ -376,7 +376,11 @@ main {
 .nav-item a[href$="/search/"] {
   text-indent: -9999px;
 }
-.nav-item a[href$="/search/"],
+.menu a[href$="/search/"]:after {
+  text-indent: 0;
+  display: block;
+  float: right;
+}
 .nav-item a[href$="/search/"]:after {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
