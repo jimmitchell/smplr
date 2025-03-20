@@ -408,6 +408,11 @@ main {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   content: "\f002";
+  color: var(--accent-3);
+}
+.nav-item a[href$="/search/"]:after:hover,
+.nav-item a[href$="/search/"]:after:active {
+  color: var(--link-hover);
 }
 
 article {
