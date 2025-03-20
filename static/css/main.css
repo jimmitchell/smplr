@@ -490,7 +490,7 @@ a.category:visited {
   color: var(--accent-3);
   border: 1px solid var(--accent-1);
   background-color: var(--accent-1);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-family: var(--secondary-font);
   border-radius: 2rem;
   padding: 0 6px;
@@ -525,7 +525,7 @@ a.category:active {
   background-color: var(--accent-1);
   font-family: var(--secondary-font);
   font-weight: 400;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   border-radius: 2rem;
   padding: 0 6px;
   display: inline-block;
