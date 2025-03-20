@@ -464,6 +464,7 @@ single article {
   color: var(--accent-3);
   font-family: var(--secondary-font);
   font-size: 1.6rem;
+  margin-top: 10px;
 }
 
 .sep {
