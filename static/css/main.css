@@ -492,7 +492,7 @@ a.category:visited {
   background-color: var(--accent-1);
   font-size: 1.6rem;
   font-family: var(--secondary-font);
-  border-radius: 2rem;
+  border-radius: .6rem;
   padding: 0 6px;
   display: inline-block;
   margin: 0 1px 5px 0;
@@ -526,7 +526,7 @@ a.category:active {
   font-family: var(--secondary-font);
   font-weight: 400;
   font-size: 1.6rem;
-  border-radius: 2rem;
+  border-radius: .6rem;
   padding: 0 6px;
   display: inline-block;
   margin: 0 0 5px 0;
