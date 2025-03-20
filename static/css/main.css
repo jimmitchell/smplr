@@ -767,6 +767,7 @@ footer p {
 
 .tiny_uptime::before {
   content: " • ";
+  margin: 0 .6rem;
 }
 
 .tiny_countries {
