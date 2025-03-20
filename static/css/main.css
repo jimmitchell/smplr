@@ -372,6 +372,15 @@ main {
   font-size: 1.6rem;
 }
 
+.nav-item a[href$="/search/"],
+.nav-item a[href$="/search/"]:after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+.nav-item a[href$="/search/"]:after {
+  content: "\f002";
+}
+
 .hamburger {
   display: none;
 }
@@ -922,6 +931,15 @@ ul.grid img:hover {
 
   .nav-item {
     margin: 1.5rem 0;
+  }
+  
+  .nav-item a[href$="/search/"] {
+    text-indent: 0;
+    color: var(--text-main-color);
+  }
+  .nav-item a[href$="/search/"]:after {
+    content: "";
+    float: none;
   }
 
   .hamburger {
