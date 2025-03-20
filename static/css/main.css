@@ -372,24 +372,6 @@ main {
   font-size: 1.6rem;
 }
 
-
-.nav-menu a[href$="/search/"] {
-  text-indent: -9999px;
-}
-.nav-menu a[href$="/search/"]:after {
-  text-indent: 0;
-  display: block;
-  float: right;
-}
-.nav-menu a[href$="/search/"],
-.nav-menu a[href$="/search/"]:after {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-}
-.nav-menu a[href$="/search/"]:after {
-  content: "\f002";
-}
-
 .hamburger {
   display: none;
 }
@@ -413,6 +395,23 @@ main {
 
 .nav-item {
   margin-left: 1.75rem;
+}
+
+.nav-item a[href$="/search/"] {
+  text-indent: -9999px;
+}
+.nav-item a[href$="/search/"]:after {
+  text-indent: 0;
+  display: block;
+  float: right;
+}
+.nav-item a[href$="/search/"],
+.nav-item a[href$="/search/"]:after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+.nav-item a[href$="/search/"]:after {
+  content: "\f002";
 }
 
 article {
