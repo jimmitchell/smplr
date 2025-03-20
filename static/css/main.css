@@ -427,7 +427,7 @@ single article {
 }
 
 .post-title {
-  margin-bottom: -15px;
+  margin-bottom: -10px;
 }
 
 .post-title a:link,
@@ -443,7 +443,7 @@ single article {
 .post-date {
   color: var(--accent-3);
   font-family: var(--headline-font);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 article img,
@@ -598,8 +598,9 @@ a.category:active {
 .microblog_time a,
 .microblog_time a:visited {
   color: var(--accent-3);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-decoration: none;
+  font-family: var(--headline-font);
 }
 
 .reply-buttons {
@@ -656,6 +657,7 @@ a.category:active {
   font-size: 1.6rem;
   margin-top: -.75rem;
   margin-bottom: .75rem;
+  font-family: var(--headline-font);
 }
 
 input.subscribe-input {
@@ -707,11 +709,12 @@ main.archive .entry p {
 
 footer {
   color: var(--accent-3);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding: 0.5rem 2rem 3rem 2rem;
   text-align: center;
   max-width: var(--site-width);
   margin: 0 auto 2rem auto;
+  font-family: var(--headline-font);
 }
 
 footer p {
