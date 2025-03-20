@@ -783,7 +783,7 @@ footer p {
 
 a.tinylytics_webring {
   display: inline;
-  line-height: 30px;
+  /* line-height: 30px; */
 }
 
 .tinylytics_webring_avatar {
