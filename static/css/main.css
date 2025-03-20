@@ -88,7 +88,7 @@ body {
   background: var(--background);
   color: var(--text);
   font-size: 1.8rem;
-  line-height: 1.5666;
+  line-height: 1.7;
   width: 100%;
   margin: 0;
   -moz-font-feature-settings: "kern" 1;
