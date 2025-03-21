@@ -340,6 +340,7 @@ main {
   font-size: 2rem;
   font-weight: var(--font-weight-bold);
   font-family: var(--secondary-font);
+  z-index: 20000;
 }
 
 .site-title a {
