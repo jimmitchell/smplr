@@ -380,7 +380,7 @@ main {
 .bar {
   display: block;
   width: 16px;
-  height: 1px;
+  height: 2px;
   margin: 3px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
