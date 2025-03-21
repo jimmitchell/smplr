@@ -446,7 +446,7 @@ single article {
 .btm-margin {
   margin-bottom: -10px;
   font-size: 1.6rem;
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-semibold) !important;
 }
 
 .post-title {
