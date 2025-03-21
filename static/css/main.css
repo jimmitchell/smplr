@@ -8,9 +8,10 @@
   --accent-3: #777;
   --highlight: #dedede;
   --primary-font: 'Atkinson Hyperlegible Next', -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --secondary-font: 'Barlow Semi Condensed', -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+  --secondary-font: 'Barlow', -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;;
   --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   --font-weight-normal: 400;
+  --font-weight-semibold: 500;
   --font-weight-bold: 600;
   --site-width: 70rem;
 }
