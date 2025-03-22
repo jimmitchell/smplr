@@ -4,8 +4,8 @@ const navLink = document.querySelectorAll(".nav-link");
 const siteTitle = document.querySelectorAll(".site-title");
 
 hamburger.addEventListener("click", mobileMenu);
-siteTitle.addEventListener("click", mobileMenu);
 navLink.forEach(n => n.addEventListener("click", closeMenu));
+siteTitle.forEach(n => n.addEventListener("click", closeMenu));
 
 function mobileMenu() {
 	hamburger.classList.toggle("active");
