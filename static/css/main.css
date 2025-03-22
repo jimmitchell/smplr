@@ -273,10 +273,10 @@ mark {
 
 input[type=button],
 input[type=submit] {
-  background-color: var(--accent-2);
+  background-color: var(--link);
   font-family: var(--secondary-font);
   border: none;
-  color: var(--text);
+  color: #fff;
   padding: 4px 10px;
   text-decoration: none;
   margin: 4px 1px;
@@ -288,8 +288,8 @@ input[type=button]:hover,
 input[type=button]:active,
 input[type=submit]:hover,
 input[type=submit]:active {
-  color: #fff;
-  background: var(--link);
+  color: var(--background);
+  background: var(--link-hover);
 }
 
 input[type=date],
