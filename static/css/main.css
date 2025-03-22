@@ -981,8 +981,8 @@ ul.grid img:hover {
   }
 
   .hamburger.active .bar:nth-child(3) {
-    -webkit-transform: translateY(-4px) rotate(-45deg);
-    transform: translateY(-4px) rotate(-45deg);
+    -webkit-transform: translateY(-5px) rotate(-45deg);
+    transform: translateY(-5px) rotate(-45deg);
   }
   
   .microblog_collection img {
