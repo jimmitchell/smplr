@@ -987,7 +987,7 @@ ul.grid img:hover {
   
   .site-title.active {
     position: fixed;
-    left: 20px;
+    display: block;
   }
   
   .microblog_collection img {
