@@ -935,7 +935,7 @@ ul.grid img:hover {
     width: 100%;
     border-radius: 0;
     text-align: center;
-    transition: 0.3s;
+    transition: 0s;
     height: 100dvmax;
     z-index: 10000;
   }
