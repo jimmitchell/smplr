@@ -703,6 +703,11 @@ input.subscribe-submit {
   text-align: center;
 }
 
+.archive-range {
+  border-bottom: 1px dotted var(--accent-2);
+  padding-bottom: 0.5rem;
+}
+
 main.archive .entry p>img {
   display: none;
 }
