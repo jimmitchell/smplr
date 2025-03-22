@@ -554,8 +554,8 @@ a.category:active {
 #guestbooks___guestbook-messages-container > div {
   background: var(--accent-1);
   border-radius: .6rem;
-  margin: 2rem 0;
-  padding: 1rem 3rem 2rem;
+  margin: 1.5rem 0;
+  padding: 0.1rem 3rem 2rem;
 }
 
 .microblog_narration_button {
