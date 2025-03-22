@@ -968,7 +968,8 @@ ul.grid img:hover {
 
   .hamburger.active {
     position: fixed;
-    right: 20px;
+    right: 2rem;
+    top: 2.75rem;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -987,7 +988,7 @@ ul.grid img:hover {
   
   .site-title.active {
     position: fixed;
-    display: block;
+    top: .75rem;
   }
   
   .microblog_collection img {
