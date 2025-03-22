@@ -970,7 +970,6 @@ ul.grid img:hover {
   .hamburger.active {
     position: fixed;
     right: 2rem;
-    top: 2.75rem;
   }
 
   .hamburger.active .bar:nth-child(2) {
