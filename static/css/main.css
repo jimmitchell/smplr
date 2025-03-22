@@ -692,7 +692,8 @@ input.subscribe-input {
 }
 
 input.subscribe-submit {
-  width:18%;padding:9px;
+  width:18%;
+  padding: 7px 9px;
 }
 
 .info {
