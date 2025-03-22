@@ -379,8 +379,8 @@ main {
 
 .bar {
   display: block;
-  width: 16px;
-  height: 2px;
+  width: 18px;
+  height: 1.5px;
   margin: 3px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -976,13 +976,13 @@ ul.grid img:hover {
   }
 
   .hamburger.active .bar:nth-child(1) {
-    -webkit-transform: translateY(5px) rotate(45deg);
-    transform: translateY(5px) rotate(45deg);
+    -webkit-transform: translateY(4px) rotate(45deg);
+    transform: translateY(4px) rotate(45deg);
   }
 
   .hamburger.active .bar:nth-child(3) {
-    -webkit-transform: translateY(-5px) rotate(-45deg);
-    transform: translateY(-5px) rotate(-45deg);
+    -webkit-transform: translateY(-4px) rotate(-45deg);
+    transform: translateY(-4px) rotate(-45deg);
   }
   
   .microblog_collection img {
