@@ -985,6 +985,11 @@ ul.grid img:hover {
     transform: translateY(-5px) rotate(-45deg);
   }
   
+  .site-title.active {
+    position: fixed;
+    left: 20px;
+  }
+  
   .microblog_collection img {
       width: 50% !important;
       height: 180px !important;
