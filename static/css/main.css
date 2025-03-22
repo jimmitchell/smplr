@@ -277,7 +277,7 @@ input[type=submit] {
   font-family: var(--secondary-font);
   border: none;
   color: var(--text);
-  padding: 6px 12px;
+  padding: 4px 10px;
   text-decoration: none;
   margin: 4px 1px;
   cursor: pointer;
@@ -300,7 +300,7 @@ input[type=tel],
 input[type=text],
 input[type=url],
 textarea {
-  padding: 8px 12px;
+  padding: 6px 10px;
   background: var(--accent-1);
   border: 1px solid var(--accent-2);
   border-radius: .6rem;
