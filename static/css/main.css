@@ -340,7 +340,6 @@ main {
   font-size: 2rem;
   font-weight: var(--font-weight-bold);
   font-family: var(--secondary-font);
-  z-index: 20000;
 }
 
 .site-title a {
@@ -380,7 +379,7 @@ main {
 .bar {
   display: block;
   width: 18px;
-  height: 1.5px;
+  height: 2px;
   margin: 3px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -403,6 +402,7 @@ main {
   text-indent: -9999px;
   float: left;
 }
+
 .nav-item a[href$="/search/"]:after {
   text-indent: 0;
   display: block;
@@ -412,6 +412,7 @@ main {
   content: "\f002";
   color: var(--accent-3);
 }
+
 .nav-item a[href$="/search/"]:hover:after,
 .nav-item a[href$="/search/"]:active:after {
   color: var(--link-hover);
@@ -935,7 +936,7 @@ ul.grid img:hover {
     width: 100%;
     border-radius: 0;
     text-align: center;
-    transition: 0s;
+    transition: 0.3s;
     height: 100dvmax;
     z-index: 10000;
   }
@@ -977,18 +978,13 @@ ul.grid img:hover {
   }
 
   .hamburger.active .bar:nth-child(1) {
-    -webkit-transform: translateY(4px) rotate(45deg);
-    transform: translateY(4px) rotate(45deg);
+    -webkit-transform: translateY(5px) rotate(45deg);
+    transform: translateY(5px) rotate(45deg);
   }
 
   .hamburger.active .bar:nth-child(3) {
     -webkit-transform: translateY(-5px) rotate(-45deg);
     transform: translateY(-5px) rotate(-45deg);
-  }
-  
-  .site-title.active {
-    position: fixed;
-    top: .75rem;
   }
   
   .microblog_collection img {
