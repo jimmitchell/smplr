@@ -7,8 +7,9 @@
   --accent-2: #ccc;
   --accent-3: #999;
   --highlight: #dedede;
-  --primary-font: 'Atkinson Hyperlegible Next', -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --secondary-font: 'Barlow', -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+  --primary-font: 'Atkinson Hyperlegible Next', sans-serif;
+  --secondary-font: 'Barlow', sans-serif;
+  --tertiary-font: 'Barlow Semi Condensed', sans-serif;
   --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   --font-weight-normal: 400;
   --font-weight-semibold: 500;
@@ -275,7 +276,7 @@ mark {
 input[type=button],
 input[type=submit] {
   background-color: var(--link);
-  font-family: var(--secondary-font);
+  font-family: var(--tertiary-font);
   font-weight: var(--font-weight-semibold);
   border: none;
   color: #fff;
@@ -393,7 +394,7 @@ main {
   justify-content: space-between;
   align-items: center;
   font-size: 1.6rem;
-  font-family: var(--secondary-font);
+  font-family: var(--tertiary-font);
   font-weight: var(--font-weight-semibold);
 }
 
@@ -467,7 +468,7 @@ single article {
 
 .post-date {
   color: var(--accent-3);
-  font-family: var(--secondary-font);
+  font-family: var(--tertiary-font);
   font-weight: var(--font-weight-semibold);
   font-size: 1.6rem;
   margin-top: 10px;
@@ -497,7 +498,7 @@ a.category:visited {
   border: 1px solid var(--accent-1);
   background-color: var(--accent-1);
   font-size: 1.6rem;
-  font-family: var(--secondary-font);
+  font-family: var(--tertiary-font);
   font-weight: var(--font-weight-semibold);
   border-radius: .6rem;
   padding: 0 6px;
@@ -530,7 +531,7 @@ a.category:active {
   color: var(--accent-3);
   border: 1px solid var(--accent-1);
   background-color: var(--accent-1);
-  font-family: var(--secondary-font);
+  font-family: var(--tertiary-font);
   font-weight: var(--font-weight-semibold);
   font-weight: 400;
   font-size: 1.6rem;
@@ -633,7 +634,7 @@ a.category:active {
   color: var(--accent-3);
   font-size: 1.6rem;
   text-decoration: none;
-  font-family: var(--secondary-font);
+  font-family: var(--tertiary-font);
   font-weight: var(--font-weight-semibold);
 }
 
@@ -691,7 +692,7 @@ a.category:active {
   font-size: 1.6rem;
   margin-top: -.75rem;
   margin-bottom: .75rem;
-  font-family: var(--secondary-font);
+  font-family: var(--tertiary-font);
   font-weight: var(--font-weight-semibold);
 }
 
@@ -732,7 +733,7 @@ main.archive .entry p {
 .main-nav {
   margin: 0;
   padding: 1rem 0 2rem 0;
-  font-family: var(--secondary-font);
+  font-family: var(--tertiary-font);
   font-weight: var(--font-weight-semibold);
 }
 
