@@ -447,11 +447,6 @@ single article {
   margin-bottom: 3rem;
 }
 
-.btm-margin {
-  margin-bottom: -10px;
-  font-size: 1.6rem;
-}
-
 .post-title {
   margin-bottom: -10px;
 }
@@ -468,14 +463,20 @@ single article {
 
 .post-date {
   color: var(--accent-3);
-  font-family: var(--tertiary-font);
-  font-weight: var(--font-weight-semibold);
+  font-family: var(--secondary-font);
   font-size: 1.6rem;
   margin-top: 10px;
 }
 
 .sep {
   margin: 0 .25rem;
+}
+
+.btm-margin {
+  margin-bottom: -10px;
+  font-size: 1.6rem;
+  font-family: var(--tertiary-font);
+  font-weight: var(--font-weight-semibold);
 }
 
 article img,
