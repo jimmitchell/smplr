@@ -9,7 +9,6 @@
   --highlight: #dedede;
   --primary-font: 'Atkinson Hyperlegible Next', sans-serif;
   --secondary-font: 'Barlow', sans-serif;
-  --tertiary-font: 'Barlow Semi Condensed', sans-serif;
   --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   --font-weight-normal: 400;
   --font-weight-semibold: 500;
@@ -276,8 +275,7 @@ mark {
 input[type=button],
 input[type=submit] {
   background-color: var(--link);
-  font-family: var(--tertiary-font);
-  font-weight: var(--font-weight-semibold);
+  font-family: var(--secondary-font);
   border: none;
   color: #fff;
   padding: 4px 10px;
@@ -394,8 +392,7 @@ main {
   justify-content: space-between;
   align-items: center;
   font-size: 1.6rem;
-  font-family: var(--tertiary-font);
-  font-weight: var(--font-weight-semibold);
+  font-family: var(--secondary-font);
 }
 
 .nav-item {
@@ -475,8 +472,7 @@ single article {
 .btm-margin {
   margin-bottom: -10px;
   font-size: 1.6rem;
-  font-family: var(--tertiary-font);
-  font-weight: var(--font-weight-semibold);
+  font-family: var(--secondary-font);
 }
 
 article img,
@@ -690,8 +686,7 @@ a.category:active {
   font-size: 1.6rem;
   margin-top: -.75rem;
   margin-bottom: .75rem;
-  font-family: var(--tertiary-font);
-  font-weight: var(--font-weight-semibold);
+  font-family: var(--secondary-font);
 }
 
 input.subscribe-input {
