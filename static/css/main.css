@@ -338,7 +338,7 @@ main {
 }
 
 .site-title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: var(--font-weight-bold);
   font-family: var(--secondary-font);
 }
