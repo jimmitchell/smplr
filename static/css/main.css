@@ -523,7 +523,7 @@ a.category:active {
 }
 
 .category-list {
-  margin: -1rem 0 6rem;
+  margin: -1rem 0 0;
 }
 
 .category-list button {
