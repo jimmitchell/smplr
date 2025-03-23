@@ -498,8 +498,7 @@ a.category:visited {
   border: 1px solid var(--accent-1);
   background-color: var(--accent-1);
   font-size: 1.6rem;
-  font-family: var(--tertiary-font);
-  font-weight: var(--font-weight-semibold);
+  font-family: var(--secondary-font);
   border-radius: .6rem;
   padding: 0 6px;
   display: inline-block;
@@ -531,9 +530,8 @@ a.category:active {
   color: var(--accent-3);
   border: 1px solid var(--accent-1);
   background-color: var(--accent-1);
-  font-family: var(--tertiary-font);
-  font-weight: var(--font-weight-semibold);
-  font-weight: 400;
+  font-family: var(--secondary-font);
+  font-weight: var(--font-weight-normal);
   font-size: 1.6rem;
   border-radius: .6rem;
   padding: 0 6px;
@@ -634,8 +632,7 @@ a.category:active {
   color: var(--accent-3);
   font-size: 1.6rem;
   text-decoration: none;
-  font-family: var(--tertiary-font);
-  font-weight: var(--font-weight-semibold);
+  font-family: var(--secondary-font);
 }
 
 .reply-buttons {
