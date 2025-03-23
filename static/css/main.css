@@ -758,7 +758,6 @@ footer {
   max-width: var(--site-width);
   margin: 0 auto 2rem auto;
   font-family: var(--secondary-font);
-  font-weight: var(--font-weight-semibold);
 }
 
 footer p {
