@@ -507,7 +507,7 @@ a.category:hover,
 a.category:active {
   border: 1px solid var(--link-hover);
   background: var(--link-hover);
-  color: var(--text);
+  color: var(--background);
 }
 
 #list_results p {
