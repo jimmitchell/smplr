@@ -524,14 +524,14 @@ a.category:active {
 
 .category-list button {
   text-decoration: none;
-  color: var(--accent-3);
+  color: var(--text);
   border: 1px solid var(--accent-1);
   background-color: var(--accent-1);
   font-family: var(--secondary-font);
   font-weight: var(--font-weight-normal);
   font-size: 1.6rem;
   border-radius: .6rem;
-  padding: 0 6px;
+  padding: 0 6px 1px;
   display: inline-block;
   margin: 0 0 5px 0;
   line-height: 1.6;
