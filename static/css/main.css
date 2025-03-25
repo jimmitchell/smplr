@@ -491,23 +491,23 @@ article ol li {
 a.category:link,
 a.category:visited {
   text-decoration: none;
-  color: var(--accent-3);
-  border: 1px solid var(--accent-1);
-  background-color: var(--accent-1);
-  font-size: 1.6rem;
+  color: var(--background);
+  border: 1px solid var(--link);
+  background-color: var(--link);
+  font-size: 1.2rem;
   font-family: var(--secondary-font);
   border-radius: .6rem;
-  padding: 0 6px;
+  padding: 0 6px 1px;
   display: inline-block;
   margin: 0 1px 5px 0;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 a.category:hover,
 a.category:active {
-  border: 1px solid var(--link);
-  background: var(--link);
-  color: var(--background);
+  border: 1px solid var(--link-hover);
+  background: var(--link-hover);
+  color: var(--text);
 }
 
 #list_results p {
