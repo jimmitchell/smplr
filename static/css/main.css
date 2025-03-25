@@ -8,10 +8,10 @@
   --accent-3: #999;
   --highlight: #dedede;
   --primary-font: 'Atkinson Hyperlegible Next', sans-serif;
-  --secondary-font: 'Barlow', sans-serif;
+  --secondary-font: 'Barlow Semi Condensed', sans-serif;
   --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   --font-weight-normal: 400;
-  --font-weight-semibold: 500;
+  --font-weight-semibold: 600;
   --font-weight-bold: 700;
   --site-width: 72rem;
 }
@@ -135,7 +135,7 @@ h4,
 h5,
 h6 {
   line-height: 1.2;
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-semibold);
   font-family: var(--secondary-font);
 }
 
@@ -209,7 +209,7 @@ table {
 }
 
 th {
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-semibold);
   background: var(--accent-1);
   font-family: var(--secondary-font);
 }
@@ -339,7 +339,7 @@ main {
 
 .site-title {
   font-size: 1.8rem;
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-semibold);
   font-family: var(--secondary-font);
 }
 
@@ -595,12 +595,12 @@ a.category:active {
 }
 
 .microblog_user {
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-semibold);
   font-family: var(--secondary-font);
 }
 
 .microblog_fullname {
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-semibold);
   font-family: var(--secondary-font);
   font-size: 1.6rem;
   margin-left: 6px;
