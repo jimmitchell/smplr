@@ -275,7 +275,7 @@ mark {
 input[type=button],
 input[type=submit] {
   background-color: var(--link);
-  color: var(--text);
+  color: var(--background);
   font-family: var(--secondary-font);
   border: none;
   color: #fff;
