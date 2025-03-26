@@ -14,6 +14,7 @@
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
   --site-width: 72rem;
+  --border-radius: 0.4rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -235,7 +236,7 @@ tt {
 
 pre {
   background: #101115;
-  border-radius: .6rem;
+  border-radius: var(--border-radius);
   color: #f8f8f8;
   line-height: 1.5;
   margin: 2rem 0;
@@ -248,7 +249,7 @@ pre {
 
 code {
   background: var(--text);
-  border-radius: .6rem;
+  border-radius:  var(--border-radius);
   color: var(--background);
   padding: 3px;
 }
@@ -282,7 +283,7 @@ input[type=submit] {
   text-decoration: none;
   margin: 4px 1px;
   cursor: pointer;
-  border-radius: .6rem;
+  border-radius: var(--border-radius);
 }
 
 input[type=button]:hover,
@@ -304,7 +305,7 @@ textarea {
   padding: 6px 10px;
   background: var(--accent-1);
   border: 1px solid var(--accent-2);
-  border-radius: .6rem;
+  border-radius: var(--border-radius);
   margin: 4px 1px;
   width: 100%;
   font-size: 1.8rem;
@@ -338,7 +339,7 @@ main {
 }
 
 .site-title {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: var(--font-weight-semibold);
   font-family: var(--secondary-font);
 }
@@ -370,7 +371,7 @@ main {
 .site-nav ul {
   list-style: none;
   padding: 0;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
 }
 
 .hamburger {
@@ -391,7 +392,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-family: var(--secondary-font);
 }
 
@@ -461,7 +462,7 @@ single article {
 .post-date {
   color: var(--accent-3);
   font-family: var(--secondary-font);
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   margin-top: 10px;
 }
 
@@ -471,7 +472,7 @@ single article {
 
 .btm-margin {
   margin-bottom: -10px;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-family: var(--secondary-font);
 }
 
@@ -494,10 +495,10 @@ a.category:visited {
   color: var(--background);
   border: 1px solid var(--link);
   background-color: var(--link);
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-family: var(--secondary-font);
-  border-radius: 1rem;
-  padding: 0 6px 1px;
+  border-radius: var(--border-radius);
+  padding: 0 6px 2px;
   display: inline-block;
   margin: 0 0 5px 0;
   line-height: 1.5;
@@ -529,8 +530,8 @@ a.category:active {
   background-color: var(--accent-1);
   font-family: var(--secondary-font);
   font-weight: var(--font-weight-normal);
-  font-size: 1.6rem;
-  border-radius: .6rem;
+  font-size: 1.7rem;
+  border-radius: var(--border-radius);
   padding: 0 6px 1px;
   display: inline-block;
   margin: 0 0 5px 0;
@@ -556,7 +557,7 @@ a.category:active {
 }
 #guestbooks___guestbook-messages-container > div {
   background: var(--accent-1);
-  border-radius: .6rem;
+  border-radius: var(--border-radius);
   margin: 1.5rem 0;
   padding: 0.1rem 3rem 2rem;
 }
@@ -565,7 +566,7 @@ a.category:active {
   display: inline-block;
   background: var(--accent-1);
   border: 1px solid var(--accent-2);
-  border-radius: .6rem;
+  border-radius: var(--border-radius);
   padding: 0px 10px 3px 6px;
 }
 
@@ -587,7 +588,7 @@ a.category:active {
   margin-bottom: 1rem;
   padding: 2.3rem 2rem;
   background: var(--accent-1);
-  border-radius: .6rem;
+  border-radius: var(--border-radius);
 }
 
 .microblog_conversation .microblog_post {
@@ -602,7 +603,7 @@ a.category:active {
 .microblog_fullname {
   font-weight: var(--font-weight-semibold);
   font-family: var(--secondary-font);
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   margin-left: 6px;
   display: inline-block;
   line-height: 30px;
@@ -612,7 +613,7 @@ a.category:active {
   vertical-align: middle;
   width: 30px;
   height: auto;
-  border-radius: .6rem;
+  border-radius: var(--border-radius);
   max-width: 30px !important;
   display: inline-block;
   margin-top: -2px;
@@ -627,7 +628,7 @@ a.category:active {
 .microblog_time a,
 .microblog_time a:visited {
   color: var(--accent-3);
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   text-decoration: none;
   font-family: var(--secondary-font);
 }
@@ -647,11 +648,11 @@ a.category:active {
 .microblog_reply_form {
   background: var(--accent-1);
   padding: 1rem 2rem;
-  border-radius: .6rem;
+  border-radius: var(--border-radius);
 }
 
 .microblog_reply_signin {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   margin-top: .75rem;
 }
 
@@ -660,7 +661,7 @@ a.category:active {
   background: var(--background);
   color: var(--text);
   width: 100%;
-  border-radius: .6rem;
+  border-radius: var(--border-radius);
   padding: 8px;
   z-index: 0;
 }
@@ -683,7 +684,7 @@ a.category:active {
 
 .microblog_reply_button {
   text-align: right;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   margin-top: -.75rem;
   margin-bottom: .75rem;
   font-family: var(--secondary-font);
@@ -702,7 +703,7 @@ input.subscribe-submit {
   background-color: var(--accent-1);
   color: var(--text);
   padding: 2rem 3rem;
-  border-radius: .6rem;
+  border-radius: var(--border-radius);
   text-align: center;
 }
 
@@ -743,9 +744,26 @@ main.archive .entry p {
   padding: 0;
 }
 
+.recommend {
+  font-size: 1.6rem;
+}
+
+.recommend-name {
+  width:30%;
+}
+
+.recommend-about {
+  width:70%;
+}
+
+.recommend td {
+  padding:8px 12px;
+  line-height:1.3;
+}
+
 footer {
   color: var(--accent-3);
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   padding: 0.5rem 2rem 3rem 2rem;
   text-align: center;
   max-width: var(--site-width);
@@ -797,7 +815,7 @@ a.tinylytics_webring {
 }
 
 .tinylytics_webring_avatar {
-  border-radius: .6rem;
+  border-radius: var(--border-radius);
   width: 24px;
   height: auto;
   vertical-align: middle;
@@ -817,7 +835,7 @@ a.tinylytics_webring {
     width: 25% !important;
     height: 150px !important;
     object-fit: cover;
-    border-radius: .6rem !important;
+    border-radius: var(--border-radius) !important;
     padding: 0;
     margin: 0 !important;
     cursor: pointer;
@@ -875,7 +893,7 @@ ul.grid {
 ul.grid li {
   margin: 0;
   padding: 0;
-  border-radius: .6rem;
+  border-radius: var(--border-radius);
   background: var(--accent-1);
   overflow: hidden;
   position: relative;
@@ -911,7 +929,7 @@ ul.grid img:hover {
   -moz-filter: brightness(70%);
   -webkit-filter: brightness(70%);
   filter: brightness(70%);
-  transition: ease-in-out 0.25s;
+  transition: ease-in-out 0.2s;
 }
 
 @media only screen and (max-width: 768px) {
