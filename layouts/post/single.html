@@ -23,5 +23,13 @@
     {{- if .Site.Params.include_conversation }}
         <script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>
     {{- end }}
+    {{- if or (.NextInSection) (.PrevInSection) }}
+    <nav class="main-nav">
+        <ul>
+            <li>{{ if .PrevInSection }}<a href="{{ .PrevInSection.Permalink }}">← Older</a>{{ end }}</li>
+            <li>{{ if .NextInSection }}<a href="{{ .NextInSection.Permalink }}">Newer →</a>{{ end }}</li>
+        </ul>
+    </nav>
+    {{- end }}
 </main>
 {{- end }}
