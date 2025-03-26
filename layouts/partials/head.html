@@ -12,9 +12,7 @@
   <meta name="description" content="{{ (or .Summary .Site.Params.itunes_description) }}">
   <link rel="canonical" href="{{ .Permalink }}">
   <link rel="author" href="humans.txt" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Barlow+Semi+Condensed:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  {{ partial "font-preload.html" . }}
   <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
   {{ partial "microblog_head.html" . }}

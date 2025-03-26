@@ -1,0 +1,56 @@
+@font-face {
+  font-display: swap;
+  font-family: "Atkinson Hyperlegible Next"; 
+  src: url('../fonts/AtkinsonHyperlegibleNext-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: "Atkinson Hyperlegible Next"; 
+  src: url('../fonts/AtkinsonHyperlegibleNext-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-display: swap;
+  font-family: "Atkinson Hyperlegible Next"; 
+  src: url('../fonts/AtkinsonHyperlegibleNext-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: "Atkinson Hyperlegible Next"; 
+  src: url('../fonts/AtkinsonHyperlegibleNext-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-display: swap;
+  font-family: "Barlow Semi Condensed"; 
+  src: url('../fonts/BarlowSemiCondensed-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: "Barlow Semi Condensed"; 
+  src: url('../fonts/BarlowSemiCondensed-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-display: swap;
+  font-family: "Barlow Semi Condensed"; 
+  src: url('../fonts/BarlowSemiCondensed-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-display: swap;
+  font-family: "Barlow Semi Condensed"; 
+  src: url('../fonts/BarlowSemiCondensed-SemiBoldItalic.woff2') format('woff2');
+  font-weight: 600;
+  font-style: italic;
+}
