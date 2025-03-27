@@ -548,6 +548,7 @@ a.category:active {
 #guestbooks___guestbook-made-with {
   color: var(--accent-3);
 }
+
 #guestbooks___guestbook-messages-container blockquote {
   border: none;
   color: var(--text);
@@ -555,11 +556,16 @@ a.category:active {
   margin: 0;
   padding: 0;
 }
+
 #guestbooks___guestbook-messages-container > div {
   background: var(--accent-1);
   border-radius: var(--border-radius);
   margin: 1.5rem 0;
   padding: 0.1rem 3rem 2rem;
+}
+
+#guestbooks___guestbook-messages-container div p {
+  font-family: var(--secondary-font);
 }
 
 .microblog_narration_button {
