@@ -1,56 +1,56 @@
 @font-face {
   font-display: swap;
   font-family: "Atkinson Hyperlegible Next"; 
-  src: url('../fonts/AtkinsonHyperlegibleNext-Regular.woff2') format('woff2');
+  src: url('../fonts/AtkinsonHyperlegibleNext-Regular.ttf') format('ttf');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-display: swap;
   font-family: "Atkinson Hyperlegible Next"; 
-  src: url('../fonts/AtkinsonHyperlegibleNext-Italic.woff2') format('woff2');
+  src: url('../fonts/AtkinsonHyperlegibleNext-Italic.ttf') format('ttf');
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-display: swap;
   font-family: "Atkinson Hyperlegible Next"; 
-  src: url('../fonts/AtkinsonHyperlegibleNext-Bold.woff2') format('woff2');
+  src: url('../fonts/AtkinsonHyperlegibleNext-Bold.ttf') format('ttf');
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-display: swap;
   font-family: "Atkinson Hyperlegible Next"; 
-  src: url('../fonts/AtkinsonHyperlegibleNext-BoldItalic.woff2') format('woff2');
+  src: url('../fonts/AtkinsonHyperlegibleNext-BoldItalic.ttf') format('ttf');
   font-weight: 700;
   font-style: italic;
 }
 @font-face {
   font-display: swap;
   font-family: "Roboto Condensed"; 
-  src: url('../fonts/RobotoCondensed-Regular.woff2') format('woff2');
+  src: url('../fonts/RobotoCondensed-Regular.ttf') format('ttf');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-display: swap;
   font-family: "Roboto Condensed"; 
-  src: url('../fonts/RobotoCondensed-Italic.woff2') format('woff2');
+  src: url('../fonts/RobotoCondensed-Italic.ttf') format('ttf');
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-display: swap;
   font-family: "Roboto Condensed"; 
-  src: url('../fonts/RobotoCondensed-SemiBold.woff2') format('woff2');
+  src: url('../fonts/RobotoCondensed-SemiBold.ttf') format('ttf');
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-display: swap;
   font-family: "Roboto Condensed"; 
-  src: url('../fonts/RobotoCondensed-SemiBoldItalic.woff2') format('woff2');
+  src: url('../fonts/RobotoCondensed-SemiBoldItalic.ttf') format('ttf');
   font-weight: 600;
   font-style: italic;
 }
