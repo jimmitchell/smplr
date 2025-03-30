@@ -138,6 +138,7 @@ h6 {
   line-height: 1.2;
   font-weight: var(--font-weight-bold);
   font-family: var(--secondary-font);
+  letter-spacing: -0.3px;
 }
 
 h1 {
