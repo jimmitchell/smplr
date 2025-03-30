@@ -498,7 +498,7 @@ a.category:visited {
   font-size: 1.4rem;
   font-family: var(--secondary-font);
   border-radius: 2rem;
-  padding: 0 8px 2px;
+  padding: 0 8px;
   display: inline-block;
   margin: 0 0 5px 0;
   line-height: 1.5;
