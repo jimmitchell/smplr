@@ -136,7 +136,7 @@ h4,
 h5,
 h6 {
   line-height: 1.2;
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
   font-family: var(--secondary-font);
 }
 
@@ -340,7 +340,7 @@ main {
 
 .site-title {
   font-size: 2rem;
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
   font-family: var(--secondary-font);
 }
 
@@ -492,9 +492,9 @@ article ol li {
 a.category:link,
 a.category:visited {
   text-decoration: none;
-  color: var(--background);
-  border: 1px solid var(--link);
-  background-color: var(--link);
+  color: var(--text);
+  border: 1px solid var(--accent-1);
+  background-color: var(--accent-1);
   font-size: 1.4rem;
   font-family: var(--secondary-font);
   border-radius: 2rem;
