@@ -435,6 +435,11 @@ article h3 {
   margin-top: 5rem;
 }
 
+article ul,
+article ol {
+  padding-left: 2.5rem;
+}
+
 single article {
   margin-bottom: 0;
   padding-bottom: 0;
