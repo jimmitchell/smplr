@@ -278,7 +278,6 @@ input[type=button],
 input[type=submit] {
   background-color: var(--link);
   color: var(--background);
-  font-family: var(--secondary-font);
   border: none;
   padding: 4px 10px;
   text-decoration: none;
@@ -506,7 +505,6 @@ a.category:visited {
   border: 1px solid var(--accent-1);
   background-color: var(--accent-1);
   font-size: 1.4rem;
-  font-family: var(--secondary-font);
   border-radius: var(--border-radius);
   padding: 0 4px;
   display: inline-block;
@@ -646,7 +644,6 @@ a.category:active {
   color: var(--accent-3);
   font-size: 1.7rem;
   text-decoration: none;
-  font-family: var(--secondary-font);
 }
 
 .reply-buttons {
@@ -703,7 +700,6 @@ a.category:active {
   font-size: 1.7rem;
   margin-top: -.75rem;
   margin-bottom: .75rem;
-  font-family: var(--secondary-font);
 }
 
 input.subscribe-input {
