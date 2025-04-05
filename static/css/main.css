@@ -249,9 +249,9 @@ pre {
 }
 
 code {
-  background: var(--text);
+  background: var(--accent-2);
   border-radius:  var(--border-radius);
-  color: var(--background);
+  color: var(--text);
   padding: 3px;
 }
 
