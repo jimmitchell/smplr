@@ -406,18 +406,13 @@ main {
 }
 
 .nav-item a[href$="/search/"]:after {
-  content: url(/img/magnifying-glass.svg);
-  scale: 65%;
   text-indent: 0;
   display: block;
   float: right;
-  /* font-family: "Font Awesome 6 Free";
+  font-family: "Font Awesome 6 Free";
   font-weight: 900;
-  content: "\f002"; */
-  fill: var(--accent-3);
-}
-.nav-item a[href$="/search/"]:after path {
-  fill: var(--accent-3);
+  content: "\f002";
+  color: var(--accent-3);
 }
 
 .nav-item a[href$="/search/"]:hover:after,
