@@ -406,7 +406,7 @@ main {
 }
 
 .nav-item a[href$="/search/"]:after {
-  content: url(magnifying-glass.svg);
+  content: url(img/magnifying-glass.svg);
   text-indent: 0;
   display: block;
   float: right;
