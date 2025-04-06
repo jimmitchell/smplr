@@ -416,6 +416,9 @@ main {
   content: "\f002"; */
   fill: var(--accent-3);
 }
+.nav-item a[href$="/search/"]:after path {
+  fill: var(--accent-3);
+}
 
 .nav-item a[href$="/search/"]:hover:after,
 .nav-item a[href$="/search/"]:active:after {
