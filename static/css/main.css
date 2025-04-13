@@ -7,8 +7,7 @@
   --accent-2: #ccc;
   --accent-3: #999;
   --highlight: #dedede;
-  --primary-font: 'Atkinson Hyperlegible Next', sans-serif;
-  --secondary-font: 'Roboto Condensed', sans-serif;
+  --font: 'Avenir Next', Avenir, sans-serif;
   --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   --font-weight-normal: 400;
   --font-weight-semibold: 600;
@@ -82,7 +81,7 @@ td {
 
 html {
   font-size: 10px;
-  font-family: var(--primary-font);
+  font-family: var(--font);
   scroll-behavior: smooth;
 }
 
@@ -101,9 +100,6 @@ body {
   font-kerning: normal;
   -ms-word-wrap: break-word;
   word-wrap: break-word;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: geometricPrecision;
 }
 
 ::-moz-selection {
@@ -137,8 +133,6 @@ h5,
 h6 {
   line-height: 1.2;
   font-weight: var(--font-weight-bold);
-  font-family: var(--secondary-font);
-  letter-spacing: -0.3px;
 }
 
 h1 {
@@ -213,7 +207,6 @@ table {
 th {
   font-weight: var(--font-weight-semibold);
   background: var(--accent-1);
-  font-family: var(--secondary-font);
 }
 
 td {
@@ -341,7 +334,6 @@ main {
 .site-title {
   font-size: 2rem;
   font-weight: var(--font-weight-bold);
-  font-family: var(--secondary-font);
 }
 
 .site-title a {
@@ -393,7 +385,6 @@ main {
   justify-content: space-between;
   align-items: center;
   font-size: 1.7rem;
-  font-family: var(--secondary-font);
 }
 
 .nav-item {
@@ -466,7 +457,6 @@ single article {
 
 .post-date {
   color: var(--accent-3);
-  font-family: var(--secondary-font);
   font-size: 1.7rem;
   margin-top: 10px;
 }
@@ -478,7 +468,6 @@ single article {
 .btm-margin {
   margin-bottom: -10px;
   font-size: 1.7rem;
-  font-family: var(--secondary-font);
 }
 
 article img,
@@ -536,7 +525,6 @@ a.category:active {
   color: var(--text);
   border: 1px solid var(--accent-1);
   background-color: var(--accent-1);
-  font-family: var(--secondary-font);
   font-weight: var(--font-weight-normal);
   font-size: 1.7rem;
   border-radius: var(--border-radius);
@@ -570,10 +558,6 @@ a.category:active {
   border-radius: var(--border-radius);
   margin: 1.5rem 0;
   padding: 0.1rem 3rem 2rem;
-}
-
-#guestbooks___guestbook-messages-container div p {
-  font-family: var(--secondary-font);
 }
 
 .microblog_narration_button {
@@ -611,12 +595,10 @@ a.category:active {
 
 .microblog_user {
   font-weight: var(--font-weight-semibold);
-  font-family: var(--secondary-font);
 }
 
 .microblog_fullname {
   font-weight: var(--font-weight-semibold);
-  font-family: var(--secondary-font);
   font-size: 1.7rem;
   margin-left: 6px;
   display: inline-block;
@@ -739,7 +721,6 @@ main.archive .entry p {
 .main-nav {
   margin: 0;
   padding: 1rem 0 2rem 0;
-  font-family: var(--secondary-font);
 }
 
 .main-nav ul {
@@ -780,7 +761,6 @@ footer {
   text-align: center;
   max-width: var(--site-width);
   margin: 0 auto 2rem auto;
-  font-family: var(--secondary-font);
 }
 
 footer p {

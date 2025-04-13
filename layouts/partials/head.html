@@ -3,8 +3,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <meta name="view-transition" content="same-origin" />
-  {{ partial "preconnect.html" . }}
-  {{ partial "opengraph.html" . }}
   {{- $creator := .Site.Params.fediverse_creator }}
   {{- if $creator }}
   <meta name="fediverse:creator" content="{{ $creator }}" />
@@ -13,7 +11,6 @@
   <meta name="description" content="{{ (or .Summary .Site.Params.itunes_description) }}">
   <link rel="canonical" href="{{ .Permalink }}">
   <link rel="author" href="humans.txt" />
-  <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
   {{ partial "microblog_head.html" . }}
 </head>
