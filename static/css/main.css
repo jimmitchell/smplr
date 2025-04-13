@@ -7,12 +7,12 @@
   --accent-2: #ccc;
   --accent-3: #999;
   --highlight: #dedede;
-  --font: 'Avenir Next', Avenir, sans-serif;
+  --body-font: 'Avenir Next', Avenir, sans-serif;
   --mono-space-font: ui-monospace, SFMono-Regular, ui-monospace, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   --font-weight-normal: 400;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
-  --site-width: 70rem;
+  --site-width: 64rem;
   --border-radius: 0.4rem;
 }
 
@@ -81,7 +81,7 @@ td {
 
 html {
   font-size: 10px;
-  font-family: var(--font);
+  font-family: var(--body-font);
   scroll-behavior: smooth;
 }
 
