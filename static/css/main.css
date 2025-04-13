@@ -89,7 +89,7 @@ body {
   background: var(--background);
   color: var(--text);
   font-size: 1.8rem;
-  line-height: 1.6;
+  line-height: 1.75;
   width: 100%;
   margin: 0;
   -moz-font-feature-settings: "kern" 1;
@@ -136,21 +136,21 @@ h6 {
 }
 
 h1 {
-  font-size: 2.8rem;
-}
-
-h2 {
   font-size: 2.6rem;
 }
 
-h3 {
+h2 {
   font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2.2rem;
 }
 
 h4,
 h5,
 h6 {
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 i, em, cite {
