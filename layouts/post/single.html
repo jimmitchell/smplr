@@ -30,6 +30,28 @@
         </p>
         {{- end }}
         {{- end }}
+        
+        {{- if .Title }}
+        {{- $currentCategories := .Params.categories }}
+        {{- $relatedPosts := where
+            (where
+                (where .Site.RegularPages "Type" "post")
+                ".Params.categories" "intersect" $currentCategories
+            )
+            ".Title" "not in" (slice "" .Title)
+        }}
+        {{- if gt (len $relatedPosts) 0 }}
+        <section class="related-posts">
+            <h4 class="related-post-header">Related Posts</h4>
+            <ul class="related-post-list">
+                {{ range first 3 $relatedPosts }}
+                    <li><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a></li>
+                {{ end }}
+            </ul>
+        </section>
+        {{- end }}
+        {{- end }}
+        
         {{- if or (templates.Exists "partials/reply-by-email.html") (templates.Exists "partials/conversation-link.html") (templates.Exists "partials/reply-on-mastodon.html") (templates.Exists "partials/tinylytics.html") }}
         <ul class="reply-buttons">
             {{- if and (templates.Exists "partials/tinylytics.html") (.Site.Params.show_kudos) (ne (.Site.Params.site_id | default "") "") }}
