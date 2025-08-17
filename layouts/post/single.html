@@ -44,7 +44,7 @@
         <section class="related-posts">
             <h4 class="related-post-header">Related Posts</h4>
             <ul class="related-post-list">
-                {{ range first 3 $relatedPosts }}
+                {{ range first 5 $relatedPosts }}
                     <li><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a></li>
                 {{ end }}
             </ul>
