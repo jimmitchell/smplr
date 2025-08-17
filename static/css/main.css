@@ -357,26 +357,15 @@ main {
 }
 
 .site-title {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: var(--font-weight-bold);
   margin: 0 auto 3rem;
   text-align: center;
 }
 
-.site-title a:link,
-.site-title a:visited {
-  color: var(--text);
-}
-
-.site-title a:hover,
-.site-title a:active {
-  color: var(--link-hover);
-  text-decoration: none;
-}
-
 .site-nav {
   font-size: 1.6rem;
-  margin: 4rem auto 1rem;
+  margin: 3rem auto 0;
   max-width: var(--site-width);
   padding: 0 2rem;
 }
@@ -389,7 +378,7 @@ main {
 }
 
 .nav-item {
-  margin: .5rem .15rem;
+  margin: 0 .15rem .5rem .15rem;
   display: inline-block;
 }
 
@@ -1009,6 +998,14 @@ img.bookshelf__cover {
   body {
     line-height: 1.5111;
     overscroll-behavior: contain;
+  }
+  
+  .avatar {
+    width: 6rem;
+  }
+  
+  .site-title {
+    font-size: 1.8rem;
   }
 
   .microblog_collection img {
