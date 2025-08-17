@@ -246,7 +246,7 @@ tt {
 
 pre {
   background: #101115;
-  border-radius: 0.5rem;
+  border-radius: var(--border-radius);
   color: #f8f8f8;
   line-height: 1.5;
   margin: 3rem 0;
@@ -374,7 +374,7 @@ main {
 
 .site-title a:hover,
 .site-title a:active {
-  color: var(--link);
+  color: var(--accent-3);
   text-decoration: none;
 }
 
@@ -467,7 +467,7 @@ single article {
 
 article img,
 article video {
-  border-radius: 0;
+  border-radius: var(--border-radius);
   height: auto;
   margin: 3rem auto;
   max-width: 100%;
@@ -569,7 +569,7 @@ a.category:active {
 
 .microblog_post {
   background: var(--accent-1);
-  border-radius: 0;
+  border-radius: var(--border-radius);
   margin-bottom: 1rem;
   padding: 2.3rem 2rem;
 }
@@ -628,7 +628,7 @@ a.category:active {
 
 .microblog_reply_form {
   background: var(--accent-1);
-  border-radius: 0;
+  border-radius: var(--border-radius);
   padding: 1rem 2rem;
 }
 
@@ -681,7 +681,7 @@ input.subscribe-submit {
 
 .info {
   background-color: var(--accent-1);
-  border-radius: 1rem;
+  border-radius: var(--border-radius);
   color: var(--text);
   padding: 2rem 3rem;
   text-align: center;
@@ -745,7 +745,7 @@ ul.grid {
 
 ul.grid li {
   background: var(--accent-1);
-  border-radius: 0;
+  border-radius: var(--border-radius);
   margin: 0;
   overflow: hidden;
   padding: 0;
@@ -820,7 +820,7 @@ ul.grid img:hover {
 
 #guestbooks___guestbook-messages-container > div {
   background: var(--accent-1);
-  border-radius: 0;
+  border-radius: var(--border-radius);
   margin: 1.5rem 0;
   padding: 0.1rem 3rem 2rem;
 }
@@ -962,7 +962,7 @@ a.tinylytics_webring {
 }
 
 .microblog_collection img {
-  border-radius: 0 !important;
+  border-radius: var(--border-radius) !important;
   border: 3px solid transparent;
   cursor: pointer;
   display: inline !important;
