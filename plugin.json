@@ -21,16 +21,6 @@
 			"type": "boolean"
 		},
 		{
-		  "field": "params.narrow_header",
-		  "label": "Use a narrow site header",
-		  "type": "boolean"
-		},
-		{
-			"field": "params.hide_avatar",
-			"label": "Hide header avatar",
-			"type": "boolean"
-		},
-		{
 		  "field": "params.custom_avatar",
 		  "label": "Custom avatar",
 		  "type": "string",
