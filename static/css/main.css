@@ -392,12 +392,12 @@ main {
 }
 
 .nav-item {
-  margin: 0 1rem;
+  margin: .5rem;
   display: inline-block;
 }
 
 .nav-item a {
-  padding: 2px 8px;
+  padding: 4px 10px;
   border-radius: 2rem;
   background: var(--accent-1);
 }
