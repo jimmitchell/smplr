@@ -350,9 +350,10 @@ main {
   border-radius: 50%;
   display: block;
   height: auto;
-  margin: 3rem auto;
+  margin: 0 auto 3rem auto;
   vertical-align: middle;
   width: 8rem;
+  border: 3px solid var(--accent-1);
 }
 
 .site-title {
