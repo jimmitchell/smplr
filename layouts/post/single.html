@@ -42,7 +42,7 @@
         }}
         {{- if gt (len $relatedPosts) 0 }}
         <section class="related-posts">
-            <h4 class="related-post-header">Related Posts</h4>
+            <h4 class="related-post-header">Recent Related Posts</h4>
             <ul class="related-post-list">
                 {{ range first 4 $relatedPosts }}
                     <li><a href="{{ .RelPermalink }}">{{ .Title | safeHTML }}</a></li>
