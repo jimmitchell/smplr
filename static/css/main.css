@@ -378,6 +378,7 @@ main {
   font-size: 1.6rem;
   margin: 4rem auto 1rem;
   max-width: var(--site-width);
+  padding: 0 2rem;
 }
 
 .nav-menu {
