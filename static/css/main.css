@@ -346,19 +346,19 @@ main {
   z-index: 10000;
 }
 
-.u-photo {
-  border-radius: var(--border-radius);
-  display: inline;
+.avatar {
+  border-radius: 50%;
+  display: block;
   height: auto;
-  margin-right: 8px;
-  margin-top: -3px;
+  margin: 3rem auto;
   vertical-align: middle;
-  width: 3.2rem;
+  width: 8rem;
 }
 
 .site-title {
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   font-weight: var(--font-weight-bold);
+  text-align: center;
 }
 
 .site-title a {
