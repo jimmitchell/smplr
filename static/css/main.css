@@ -378,42 +378,20 @@ main {
 }
 
 .site-nav {
-  align-items: center;
-  display: flex;
   font-size: 1.6rem;
-  justify-content: space-between;
   margin: 0 auto;
-  max-width: var(--header-width);
+  max-width: var(--site-width);
   padding: 0.75rem 2rem 0.5rem 2rem;
 }
 
-.site-nav ul {
+.nav-menu {
   list-style: none;
   padding: 0;
 }
 
-.hamburger {
-  display: none;
-}
-
-.bar {
-  background-color: var(--text);
-  display: block;
-  height: 2px;
-  margin: 3px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  width: 16px;
-}
-
-.nav-menu {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-}
-
 .nav-item {
-  margin-left: 1.75rem;
+  margin: 0 1rem;
+  display: inline-block;
 }
 
 article {
