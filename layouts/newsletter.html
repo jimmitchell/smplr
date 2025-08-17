@@ -14,17 +14,17 @@
 		max-width: 700px;
 	}
 	.body {
-		font-family: 'Avenir Next', Avenir, system-ui, sans-serif;
+		font-family: system-ui, sans-serif;
 		font-size: 18px;
-		max-width: 680px;
+		max-width: 700px;
 	}
 	.intro {
 		border-bottom: 1px solid #d4d4d6;
 		padding-bottom: 20px;
 	}
 	.post {
-		margin-top: 30px;
-		margin-bottom: 30px;
+		margin-top: 10px;
+		margin-bottom: 10px;
 	}
 	.footer {
 		border-top: 1px solid #d4d4d6;
@@ -42,7 +42,7 @@
 
 	{{- range .Pages }}
 	<div class="post">
-		<a href="{{ .Permalink }}" class="microblog_permalink">{{ .Date.Format "Monday, January 2, 2006" }}</a>
+		<a href="{{ .Permalink }}" class="microblog_permalink">{{ .Date.Format "January 2, 2006" }}</a>
 		{{- if .Title }}
 		<h3>{{ .Title }}</h3>
 		{{- end }}

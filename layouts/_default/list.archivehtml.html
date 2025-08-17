@@ -1,25 +1,27 @@
 {{- define "main" }}
 <main class="archive">
 	<article>
-		<h1 class="page-title">{{ .Title }}</h1>
+		<h1 class="page-title">{{ .Title | safeHTML }}</h1>
 		{{- $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
-		{{- if gt (len $list) 0 }}
+		{{- if and (.Site.Params.show_categories) (gt (len $list) 0) }}
 		<div class="archive-categories">
 			<div class="category-list">
 				{{ range $list }}
-				<a href="{{ .Permalink }}"><button>{{ .Title }}</button></a>
+				<a href="{{ .Permalink }}"><button>{{ .Title | safeHTML }}</button></a>
 				{{ end }}
 			</div>
 		</div>
 		{{- end }}
 		{{- $posts := where  .Site.RegularPages "Type" "post" }}
-		{{- $grouped := $posts.GroupByDate "January 2006" }}
+		{{- $grouped := $posts.GroupByDate "2006-01" }}
 		{{- range $grouped }}
-			<h3 class="archive-range">{{ .Key }}</h3>
+			<h3 class="archive-range">{{ (.Key | printf "%s-01") | dateFormat "January 2006" }}</h3>
 			{{- range .Pages }}
-			<p class="post-date"><a href="{{ .Permalink }}">{{ .Date.Format "Monday, January 2, 2006" }} →</a></p>
+			<p class="post-date">
+				<a href="{{ .Permalink }}">{{- if .Site.Params.use_short_date }}{{ .Date | time.Format ":date_short" }}{{- else }}{{ .Date | time.Format ":date_full" }}{{- end }} →</a>
+			</p>
 			<div class="entry">
-				<p>{{- if .Title }}<b>{{ .Title }}:</b>&nbsp;{{- end }}{{ .Summary | safeHTML | truncate 300  }}</p>
+				<p>{{- if .Title }}<b>{{ .Title | safeHTML }}:</b>&nbsp;{{- end }}{{ .Summary | safeHTML | truncate 300  }}</p>
 			</div>
 			{{- end }}
 		{{- end }}

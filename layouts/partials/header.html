@@ -1,19 +1,29 @@
 <header class="header">
     <nav class="site-nav">
-        <h1 class="site-title"><a href="/">{{ .Site.Title }}</a></h1>
+        
+        {{- if .Site.Params.hide_avatar }}
+        <h1 class="site-title">
+            <a href="/">{{ .Site.Title }}</a>
+        </h1>
+        {{- else }}
+        {{- $avatar := .Site.Params.custom_avatar }}
+        <a href="/">
+            <img id="avatar" class="u-photo" src="{{ if $avatar }}{{ $avatar }}{{ else }}{{ .Site.Author.avatar }}{{ end }}" width="48" height="48" />
+        </a>
+        <h1 class="site-title">
+            <a href="/">{{ .Site.Title }}</a>
+        </h1>
+        {{- end }}
+        
         <ul class="nav-menu">
         {{- range .Site.Menus.main }}
             {{- if .Page.Params.redirect_url }}
-            <li class="nav-item"><a href="{{ .Page.Params.redirect_url }}">{{ .Name }}</a></li>
+            <li class="nav-item"><a href="{{ .Page.Params.redirect_url }}">{{ .Name | safeHTML }}</a></li>
             {{- else }}
-            <li class="nav-item"><a href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a></li>
+            <li class="nav-item"><a href="{{ .URL | relLangURL | safeURL }}">{{ .Name | safeHTML }}</a></li>
             {{- end }}
         {{- end }}
         </ul>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
+        
     </nav>
 </header>

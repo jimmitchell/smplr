@@ -3,14 +3,43 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <meta name="view-transition" content="same-origin" />
+  <title>{{ block "title" . }}{{ if .IsHome }}{{ .Site.Title }}{{ else if .Title }}{{ trim (.Title | plainify) " " }} | {{ .Site.Title }}{{ else }}{{ delimit (split (.Summary  | plainify) " " | first 5) " " }} … | {{ .Site.Title }}{{ end }}{{ end }}</title>
+  <link rel="preload" href="/fonts/GT-W-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+  <link rel="preload" href="/fonts/GT-W-Regular-Oblique.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+  <link rel="preload" href="/fonts/GT-W-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+  <link rel="preload" href="/fonts/GT-W-Bold-Oblique.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+  <meta name="twitter:card" content="summary">
+  {{- with .Title }}
+  <meta name="twitter:title" content="{{ . | plainify }}">
+  <meta property="og:title" content="{{ . | plainify }}">
+  {{- else }}
+  <meta name="twitter:title" content="{{ .Site.Title | plainify }}">
+  <meta property="og:title" content="{{ .Site.Title | plainify }}">
+  {{- end }}
+  {{- if .IsHome }}
+  <meta name="twitter:description" content="{{ .Site.Params.itunes_description | truncate 125 | plainify }}">
+  <meta name="og:description" content="{{ .Site.Params.itunes_description | truncate 60 | plainify }}">
+  <meta name="description" content="{{ .Site.Params.itunes_description | plainify }}">
+  <meta name="twitter:image" content="{{ .Site.Author.avatar }}">
+  <meta property="og:image" content="{{ .Site.Author.avatar }}">
+  {{- else }}
+  <meta name="twitter:description" content="{{ .Summary | truncate 60 | plainify }}">
+  <meta name="og:description" content="{{ .Summary | truncate 60 | plainify }}">
+  <meta name="description" content="{{ (or .Summary .Site.Params.itunes_description) | plainify }}">
+  {{- end }}
   {{- $creator := .Site.Params.fediverse_creator }}
   {{- if $creator }}
   <meta name="fediverse:creator" content="{{ $creator }}" />
   {{- end }}
-  <title>{{- block "title" . -}}{{- .Site.Title -}}{{- if and .Title (ne .Title .Site.Title) }} | {{ .Title }}{{- end -}}{{- end -}}</title>
-  <meta name="description" content="{{ (or .Summary .Site.Params.itunes_description) }}">
   <link rel="canonical" href="{{ .Permalink }}">
   <link rel="author" href="humans.txt" />
-  <link rel="stylesheet" href="{{ "css/main.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
+  <link href="{{ "css/fonts.css" | relURL }}?{{ .Site.Params.theme_seconds }}" rel="preload stylesheet" as="style">
+  <link href="{{ "css/main.css" | relURL }}?{{ .Site.Params.theme_seconds }}" rel="preload stylesheet" as="style">
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#20232a" media="(prefers-color-scheme: dark)" />
+  {{- if .Site.Params.narrow_header }}
+  <style>.site-nav {max-width:var(--site-width)}</style>
+  {{- end }}
   {{ partial "microblog_head.html" . }}
 </head>

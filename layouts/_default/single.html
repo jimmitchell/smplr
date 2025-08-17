@@ -2,7 +2,7 @@
 <main>
   <article>
     {{- if .Title }}
-    <h1 class="page-title">{{ .Title }}</h1>
+    <h1 class="page-title">{{ .Title | safeHTML }}</h1>
     {{- end }}
     {{ .Content }}
   </article>

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ .Site.Language.Lang | default "en" }}">
     {{ partial "head.html" . }}
     <body>
         {{ partial "header.html" . }}
         {{ block "main" . }}{{ end }}
         {{ partial "footer.html" . }}
-        <script defer type="text/javascript" src="{{ "js/menu.js" | relURL }}"></script>
+        <script defer type="text/javascript" src="{{ "js/scroll-to-top.js" | relURL }}"></script>
         {{- range .Site.Params.plugins_js -}}
         <script defer type="text/javascript" src="{{ . }}"></script>
         {{- end -}}
