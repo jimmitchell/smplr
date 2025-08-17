@@ -379,6 +379,7 @@ main {
 .nav-item {
   margin: .5rem .15rem;
   display: inline-block;
+  border-radius: 2rem;
 }
 
 .nav-item a:link,
