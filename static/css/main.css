@@ -387,6 +387,7 @@ main {
 
 .nav-menu {
   list-style: none;
+  margin: 4rem auto 1rem;
   padding: 0;
   text-align: center;
 }
@@ -396,14 +397,15 @@ main {
   display: inline-block;
 }
 
-.nav-item a {
+.nav-item a:link,
+.nav-item a:visited {
   padding: 4px 10px;
   border-radius: 2rem;
   background: var(--accent-1);
 }
 
 .nav-item a:hover,
-.nav-item a:visited {
+.nav-item a:active {
   background: var(--link);
   color: var(--background);
   text-decoration: none;
