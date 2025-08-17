@@ -349,7 +349,7 @@ main {
   border-radius: 50%;
   display: block;
   height: auto;
-  margin: 1rem auto;
+  margin: 1rem auto .5rem;
   vertical-align: middle;
   width: 8rem;
   border: 5px solid var(--accent-1);
