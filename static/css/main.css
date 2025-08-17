@@ -357,14 +357,10 @@ main {
 }
 
 .site-title {
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   font-weight: var(--font-weight-bold);
+  margin: 0 auto 3rem;
   text-align: center;
-}
-
-.site-title a {
-  display: inline-block;
-  padding-top: 3px;
 }
 
 .site-title a:link,
@@ -382,12 +378,11 @@ main {
   font-size: 1.6rem;
   margin: 0 auto;
   max-width: var(--site-width);
-  padding: 0.75rem 2rem 0.5rem 2rem;
 }
 
 .nav-menu {
   list-style: none;
-  margin: 4rem auto 1rem;
+  margin: 3rem auto 0;
   padding: 0;
   text-align: center;
 }
