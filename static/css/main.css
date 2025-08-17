@@ -457,6 +457,16 @@ article video {
   max-width: 100%;
 }
 
+article.h-entry .e-content img {
+  cursor: pointer;
+}
+
+.last-mod {
+  color: var(--accent-3);
+  font-size: 1.6rem;
+  font-style: italic
+}
+
 article ul li,
 article ol li {
   margin-bottom: 5px;
