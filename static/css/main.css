@@ -377,7 +377,7 @@ main {
 }
 
 .nav-item {
-  margin: .5rem .15rem;
+  margin: .25rem .075rem;
   display: inline-block;
   border-radius: 2rem;
 }
