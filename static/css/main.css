@@ -15,7 +15,7 @@
     color-scheme: light;
     --background: #ffffff;
     --text: #42444a;
-    --link: #0d88d8;
+    --link: #8839ef; /* #0d88d8; */
     --link-hover: #101115;
     --accent-1: #f6f6f6;
     --accent-2: #d4d4d6;
@@ -29,7 +29,7 @@
     color-scheme: dark;
     --background: #20232a;
     --text: #f7f7f7;
-    --link: #45c8f7;
+    --link: #aa80e4; /* #45c8f7; */
     --link-hover: #ffffff;
     --accent-1: #3d4149;
     --accent-2: #53565d;
