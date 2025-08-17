@@ -3,11 +3,10 @@
         
         {{- $avatar := .Site.Params.custom_avatar }}
         <img class="avatar u-photo" src="{{ if $avatar }}{{ $avatar }}{{ else }}{{ .Site.Author.avatar }}{{ end }}" width="48" height="48" />
-        <h1 class="site-title">
-            <a href="/">{{ .Site.Title }}</a>
-        </h1>
+        <h1 class="site-title">{{ .Site.Title }}</h1>
         
         <ul class="nav-menu">
+            <li class="nav-item"><a href="/">Home</a></li>
         {{- range .Site.Menus.main }}
             {{- if .Page.Params.redirect_url }}
             <li class="nav-item"><a href="{{ .Page.Params.redirect_url }}">{{ .Name | safeHTML }}</a></li>
