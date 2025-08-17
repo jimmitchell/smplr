@@ -385,7 +385,7 @@ main {
 .nav-item a:visited {
   background: var(--accent-1);
   border-radius: 2rem;
-  color: var(--text);
+  color: var(--accent-3);
   padding: 4px 10px;
 }
 
