@@ -467,7 +467,7 @@ single article {
 
 article img,
 article video {
-  border-radius: 1rem;
+  border-radius: 0;
   height: auto;
   margin: 3rem auto;
   max-width: 100%;
@@ -482,7 +482,7 @@ a.category:link,
 a.category:visited,
 .category-list button {
   background-color: var(--accent-1);
-  border-radius: var(--border-radius);
+  border-radius: 2rem;
   border: 1px solid var(--accent-1);
   color: var(--accent-3);
   display: inline-block;
@@ -521,7 +521,7 @@ a.category:active {
 
 .category-list button {
   background-color: var(--accent-1);
-  border-radius: var(--border-radius);
+  border-radius: 2rem;
   border: 1px solid var(--accent-1);
   color: var(--accent-3);
   display: inline-block;
@@ -547,7 +547,7 @@ a.category:active {
 
 .microblog_narration_button {
   background: var(--accent-1);
-  border-radius: var(--border-radius);
+  border-radius: 2rem;
   border: 1px solid var(--accent-2);
   display: inline-block;
   padding: 0 10px 3px 6px;
@@ -569,7 +569,7 @@ a.category:active {
 
 .microblog_post {
   background: var(--accent-1);
-  border-radius: var(--border-radius);
+  border-radius: 0;
   margin-bottom: 1rem;
   padding: 2.3rem 2rem;
 }
@@ -591,7 +591,7 @@ a.category:active {
 }
 
 .microblog_user img {
-  border-radius: var(--border-radius);
+  border-radius: 50%;
   display: inline-block;
   height: auto;
   margin-top: -2px;
@@ -628,7 +628,7 @@ a.category:active {
 
 .microblog_reply_form {
   background: var(--accent-1);
-  border-radius: var(--border-radius);
+  border-radius: 0;
   padding: 1rem 2rem;
 }
 
@@ -745,7 +745,7 @@ ul.grid {
 
 ul.grid li {
   background: var(--accent-1);
-  border-radius: 1rem;
+  border-radius: 0;
   margin: 0;
   overflow: hidden;
   padding: 0;
@@ -820,7 +820,7 @@ ul.grid img:hover {
 
 #guestbooks___guestbook-messages-container > div {
   background: var(--accent-1);
-  border-radius: var(--border-radius);
+  border-radius: 0;
   margin: 1.5rem 0;
   padding: 0.1rem 3rem 2rem;
 }
@@ -897,7 +897,7 @@ a.conversation-on-mb,
 a.reply-on-mastodon,
 a.reply-by-email {
   background-color: var(--accent-1);
-  border-radius: var(--border-radius);
+  border-radius: 2rem;
   border: 1px solid var(--accent-1);
   color: var(--accent-3);
   display: inline-block;
@@ -947,7 +947,7 @@ a.tinylytics_webring {
 
 .tinylytics_webring_avatar {
   background: var(--background);
-  border-radius: var(--border-radius);
+  border-radius: 50%;
   height: auto;
   margin-right: 6px;
   vertical-align: middle;
@@ -962,7 +962,7 @@ a.tinylytics_webring {
 }
 
 .microblog_collection img {
-  border-radius: 1rem !important;
+  border-radius: 0 !important;
   border: 3px solid transparent;
   cursor: pointer;
   display: inline !important;
