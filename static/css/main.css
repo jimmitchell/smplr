@@ -341,9 +341,8 @@ main {
 
 .header {
   background: var(--background);
-  margin: 2rem 0;
+  margin: 2rem 0 0;
   width: 100%;
-  z-index: 10000;
 }
 
 .avatar {
@@ -366,7 +365,7 @@ main {
 .site-nav {
   font-size: 1.6rem;
   margin: 3rem auto 0;
-  max-width: var(--site-width);
+  width: 100%;
   padding: 0 2rem;
 }
 
