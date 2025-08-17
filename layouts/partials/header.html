@@ -1,6 +1,7 @@
 <header class="header">
     <nav class="site-nav">
         
+        {{- $avatar := .Site.Params.custom_avatar }}
         <img class="avatar u-photo" src="{{ if $avatar }}{{ $avatar }}{{ else }}{{ .Site.Author.avatar }}{{ end }}" width="48" height="48" />
         <h1 class="site-title">
             <a href="/">{{ .Site.Title }}</a>
