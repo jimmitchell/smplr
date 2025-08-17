@@ -353,7 +353,7 @@ main {
   margin: 1rem auto;
   vertical-align: middle;
   width: 8rem;
-  border: 4px solid var(--accent-1);
+  border: 5px solid var(--accent-1);
 }
 
 .site-title {
