@@ -344,6 +344,23 @@ main {
   width: 100%;
 }
 
+a.nav-header {
+  display: block;
+  margin: 0 auto;
+  width: 15rem;
+}
+
+a.nav-header:link,
+a.nav-header:visited {
+  color: var(--text);
+}
+
+a.nav-header:hover,
+a.nav-header:active {
+  color: var(--link-hover);
+  text-decoration: none;
+}
+
 .avatar {
   border-radius: 50%;
   display: block;
