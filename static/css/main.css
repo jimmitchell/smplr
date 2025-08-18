@@ -214,7 +214,6 @@ hr {
 
 blockquote {
   border-left: 3px solid var(--link);
-  color: var(--accent-3);
   font-style: italic;
   margin: 2rem 1rem;
   padding: 0 2rem;
