@@ -1010,14 +1010,6 @@ img.bookshelf__cover {
     line-height: 1.5111;
     overscroll-behavior: contain;
   }
-  
-  .avatar {
-    width: 6rem;
-  }
-  
-  .site-title {
-    font-size: 1.8rem;
-  }
 
   .microblog_collection img {
     height: 110px !important;
