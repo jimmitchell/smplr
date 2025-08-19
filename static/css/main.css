@@ -467,9 +467,10 @@ single article {
 article img,
 article video {
   border-radius: var(--border-radius);
+  display: block;
   height: auto;
   margin: 3rem auto;
-  max-width: 100%;
+  width: 100%;
 }
 
 article.h-entry .e-content img {
