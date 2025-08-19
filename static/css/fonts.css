@@ -24,3 +24,45 @@
   font-style: italic;
   font-weight: 700;
 }
+
+/* === Proxixma Nova === */
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-display: swap;
+  src: url('../fonts/Proxima-Nova_Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  font-display: swap;
+  src: url('../fonts/Proxima-Nova_Italic.woff2') format('woff2');
+  font-style: italic;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  font-display: swap;
+  src: url('../fonts/Proxima-Nova_Semibold.woff2') format('woff2');
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  font-display: swap;
+  src: url('../fonts/Proxima-Nova_Semibold_Italic.woff2') format('woff2');
+  font-style: italic;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  font-display: swap;
+  src: url('../fonts/Proxima-Nova_Bold.woff2') format('woff2');
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  font-display: swap;
+  src: url('../fonts/Proxima-Nova_Bold_Italic.woff2') format('woff2');
+  font-style: italic;
+  font-weight: 700;
+}

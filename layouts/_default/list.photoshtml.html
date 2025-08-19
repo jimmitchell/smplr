@@ -1,5 +1,5 @@
 {{ define "main" }}
-<main class="photos{{ if .Site.Params.full_width_photos }}{{ print "-wide" }}{{ end }}">
+<main class="photos">
 	<article>
 	<h1 class="page-title">{{ .Title | safeHTML }}</h1>
 	{{- $allFormats := .Site.Params.all_formats }}

@@ -64,11 +64,6 @@
 		  "type": "boolean"
 		},
 		{
-		  "field": "params.full_width_photos",
-		  "label": "Use a wider photos page",
-		  "type": "boolean"
-		},
-		{
 		  "field": "params.single_image",
 		  "label": "Show first post image only",
 		  "type": "boolean"
