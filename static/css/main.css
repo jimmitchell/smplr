@@ -385,7 +385,7 @@ a.nav-header:active {
 
 .nav-menu {
   list-style: none;
-  margin: 3rem auto 0;
+  margin: 3rem auto 2rem;
   padding: 0;
   text-align: center;
 }
