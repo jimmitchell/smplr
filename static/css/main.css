@@ -369,11 +369,6 @@ a.nav-header:active {
   border: 5px solid var(--accent-1);
 }
 
-a.nav-header .avatar:hover,
-a.nav-header .avatar:active {
-  border-color: var(--accent-2);
-}
-
 .site-title {
   font-size: 2rem;
   font-weight: var(--font-weight-bold);
