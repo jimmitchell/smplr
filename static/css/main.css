@@ -369,6 +369,11 @@ a.nav-header:active {
   border: 5px solid var(--accent-1);
 }
 
+a.nav-header .avatar:hover,
+a.nav-header .avatar:active {
+  border-color: var(--accent-2);
+}
+
 .site-title {
   font-size: 2rem;
   font-weight: var(--font-weight-bold);
@@ -391,7 +396,7 @@ a.nav-header:active {
 }
 
 .nav-item {
-  margin: .4rem .075rem;
+  margin: .5rem 0;
   display: inline-block;
   border-radius: 2rem;
 }
