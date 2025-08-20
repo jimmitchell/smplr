@@ -398,7 +398,7 @@ a.nav-header:active {
 
 .nav-item a:link,
 .nav-item a:visited {
-  background: var(--accent-1);
+  background: var(--background);
   border-radius: 2rem;
   color: var(--accent-3);
   padding: 4px 10px;
