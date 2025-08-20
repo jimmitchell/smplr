@@ -493,7 +493,7 @@ article ol li {
 a.category:link,
 a.category:visited,
 .category-list button {
-  background-color: var(--accent-1);
+  background-color: var(--background);
   border-radius: 2rem;
   border: 1px solid var(--accent-1);
   color: var(--accent-3);
@@ -551,7 +551,7 @@ a.category:active {
 }
 
 .category-list button {
-  background-color: var(--accent-1);
+  background-color: var(--background);
   border-radius: 2rem;
   border: 1px solid var(--accent-1);
   color: var(--accent-3);
