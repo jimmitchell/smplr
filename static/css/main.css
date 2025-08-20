@@ -399,6 +399,7 @@ a.nav-header:active {
 .nav-item a:link,
 .nav-item a:visited {
   background: var(--background);
+  border: 1px solid var(--accent-1);
   border-radius: 2rem;
   color: var(--accent-3);
   padding: 4px 10px;
@@ -407,6 +408,7 @@ a.nav-header:active {
 .nav-item a:hover,
 .nav-item a:active {
   background: var(--link);
+  border-color: var(--link);
   color: var(--background);
   text-decoration: none;
 }
