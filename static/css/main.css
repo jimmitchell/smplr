@@ -5,7 +5,7 @@
   --font-weight-normal: 400;
   --font-weight-bold: 700;
   --site-width: 64rem;
-  --border-radius: 0.6rem;
+  --border-radius: 1rem;
 }
 
 @media (prefers-color-scheme: light) {
@@ -308,7 +308,7 @@ input[type="tel"],
 input[type="text"],
 input[type="url"],
 textarea {
-  background: var(--accent-1);
+  background: var(--background);
   border-radius: var(--border-radius);
   border: 1px solid var(--accent-2);
   color: var(--text);
@@ -399,7 +399,7 @@ a.nav-header:active {
 .nav-item a:link,
 .nav-item a:visited {
   background: var(--background);
-  border: 1px solid var(--accent-1);
+  border: 1px solid var(--accent-2);
   border-radius: 2rem;
   color: var(--accent-3);
   padding: 4px 10px;
@@ -495,13 +495,13 @@ a.category:visited,
 .category-list button {
   background-color: var(--background);
   border-radius: 2rem;
-  border: 1px solid var(--accent-1);
+  border: 1px solid var(--accent-2);
   color: var(--accent-3);
   display: inline-block;
   font-size: 1.4rem;
   line-height: 1.6;
   margin: 0 1px 5px 0;
-  padding: 0 8px;
+  padding: 1px 9px;
   text-decoration: none;
 }
 
@@ -553,13 +553,13 @@ a.category:active {
 .category-list button {
   background-color: var(--background);
   border-radius: 2rem;
-  border: 1px solid var(--accent-1);
+  border: 1px solid var(--accent-2);
   color: var(--accent-3);
   display: inline-block;
   font-size: 1.4rem;
   line-height: 1.6;
   margin: 0 0 5px 0;
-  padding: 0 8px;
+  padding: 1px 9px;
   text-decoration: none;
 }
 
@@ -599,7 +599,8 @@ a.category:active {
 }
 
 .microblog_post {
-  background: var(--accent-1);
+  background: var(--background);
+  border: 1px solid var(--accent-2);
   border-radius: var(--border-radius);
   margin-bottom: 1rem;
   padding: 2.3rem 2rem;
@@ -658,7 +659,8 @@ a.category:active {
 }
 
 .microblog_reply_form {
-  background: var(--accent-1);
+  background: var(--background);
+  border: 1px solid var(--accent-2);
   border-radius: var(--border-radius);
   padding: 1rem 2rem;
 }
@@ -845,7 +847,8 @@ ul.grid img:hover {
 }
 
 #guestbooks___guestbook-messages-container > div {
-  background: var(--accent-1);
+  background: var(--background);
+  border: 1px solid var(--accent-2);
   border-radius: var(--border-radius);
   margin: 1.5rem 0;
   padding: 0.1rem 3rem 2rem;
@@ -922,9 +925,9 @@ footer p {
 a.conversation-on-mb,
 a.reply-on-mastodon,
 a.reply-by-email {
-  background-color: var(--accent-1);
+  background-color: var(--background);
   border-radius: 2rem;
-  border: 1px solid var(--accent-1);
+  border: 1px solid var(--accent-2);
   color: var(--accent-3);
   display: inline-block;
   font-size: 1.4rem;
