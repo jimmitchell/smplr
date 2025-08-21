@@ -6,6 +6,7 @@
             <h1 class="site-title">{{ .Site.Title }}</h1>
         </a>
         <ul class="nav-menu">
+            <li class="nav-item"><a href="/">Home</a></li>
         {{- range .Site.Menus.main }}
             {{- if .Page.Params.redirect_url }}
             <li class="nav-item"><a href="{{ .Page.Params.redirect_url }}">{{ .Name | safeHTML }}</a></li>
