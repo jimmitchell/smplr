@@ -136,7 +136,9 @@ a:visited,
 a:hover,
 a:active,
 .category-list button:hover,
-.category-list button:active {
+.category-list button:active,
+input[type="button"],
+input[type="submit"] {
   transition: color 0.15s ease-in-out, background 0.15s ease-in-out, border 0.15s ease-in-out;
 }
 
