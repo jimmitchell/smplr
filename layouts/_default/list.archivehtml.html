@@ -26,7 +26,7 @@
 				<a href="{{ .Permalink }}">{{- if .Site.Params.use_short_date }}{{ .Date | time.Format ":date_short" }}{{- else }}{{ .Date | time.Format ":date_full" }}{{- end }} →</a>
 			</p>
 			<div class="entry">
-				<p>{{- if .Title }}<b>{{ .Title | safeHTML }}:</b>&nbsp;{{- end }}{{ .Summary | safeHTML | truncate 300  }}</p>
+				<p>{{- if .Title }}<b><a href="{{ .Permalink }}">{{ .Title | safeHTML }}</a>:</b>&nbsp;{{- end }}{{ .Summary | safeHTML | truncate 300  }}</p>
 			</div>
 			{{- end }}
 		{{- end }}
