@@ -2,11 +2,10 @@
     <nav class="site-nav">
         {{- $avatar := .Site.Params.custom_avatar }}
         <a href="/" class="nav-header">
-            <img class="avatar u-photo" src="{{ if $avatar }}{{ $avatar }}{{ else }}{{ .Site.Author.avatar }}{{ end }}" width="48" height="48" />
+            <img class="avatar u-photo" src="{{ if $avatar }}{{ $avatar }}{{ else }}{{ .Site.Author.avatar }}{{ end }}" width="80" height="80" />
             <h1 class="site-title">{{ .Site.Title }}</h1>
         </a>
         <ul class="nav-menu">
-            <li class="nav-item"><a href="/">Home</a></li>
         {{- range .Site.Menus.main }}
             {{- if .Page.Params.redirect_url }}
             <li class="nav-item"><a href="{{ .Page.Params.redirect_url }}">{{ .Name | safeHTML }}</a></li>
