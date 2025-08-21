@@ -2,7 +2,7 @@
 <main class="archive">
 	<article>
 		<h1 class="page-title">{{ .Title | safeHTML }}</h1>
-		{{- $list := ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+		{{- $list := sort ($.Site.GetPage "taxonomyTerm" "categories").Pages "Title" "asc" }}
 		{{- if and (.Site.Params.show_categories) (gt (len $list) 0) }}
 		<div class="archive-categories">
 			<div class="category-list">
