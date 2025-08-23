@@ -492,6 +492,10 @@ article ol li {
   margin-bottom: 5px;
 }
 
+.categories {
+  margin-top: 5rem;
+}
+
 a.category:link,
 a.category:visited,
 .category-list button {
