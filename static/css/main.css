@@ -285,7 +285,7 @@ mark {
 input[type="button"],
 input[type="submit"] {
   background-color: var(--text);
-  border-radius: 3rem;
+  border-radius: var(--border-radius);
   border: none;
   color: var(--background);
   cursor: pointer;
@@ -395,14 +395,14 @@ a.nav-header:active {
 .nav-item {
   margin: .5rem 0;
   display: inline-block;
-  border-radius: 3rem;
+  border-radius: var(--border-radius);
 }
 
 .nav-item a:link,
 .nav-item a:visited {
   background: var(--background);
   border: 1px solid var(--accent-2);
-  border-radius: 3rem;
+  border-radius: var(--border-radius);
   color: var(--accent-3);
   padding: 4px 10px;
 }
@@ -500,7 +500,7 @@ a.category:link,
 a.category:visited,
 .category-list button {
   background-color: var(--background);
-  border-radius: 3rem;
+  border-radius: var(--border-radius);
   border: 1px solid var(--accent-2);
   color: var(--accent-3);
   display: inline-block;
@@ -558,7 +558,7 @@ a.category:active {
 
 .category-list button {
   background-color: var(--background);
-  border-radius: 3rem;
+  border-radius: var(--border-radius);
   border: 1px solid var(--accent-2);
   color: var(--accent-3);
   display: inline-block;
@@ -584,7 +584,7 @@ a.category:active {
 
 .microblog_narration_button {
   background: var(--accent-1);
-  border-radius: 3rem;
+  border-radius: var(--border-radius);
   border: 1px solid var(--accent-2);
   display: inline-block;
   padding: 0 10px 3px 6px;
@@ -932,7 +932,7 @@ a.conversation-on-mb,
 a.reply-on-mastodon,
 a.reply-by-email {
   background-color: var(--background);
-  border-radius: 3rem;
+  border-radius: var(--border-radius);
   border: 1px solid var(--accent-2);
   color: var(--accent-3);
   display: inline-block;

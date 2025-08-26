@@ -3,15 +3,12 @@
 	<article>
 		<h1 class="page-title">{{ .Title | safeHTML }}</h1>
 		
-		{{- $categories := .Site.Taxonomies.categories }}
+		{{- $categories := .Site.Taxonomies.categories.Alphabetical }}
 		{{- if and (.Site.Params.show_categories) (gt (len $categories) 0) }}
 		<div class="archive-categories">
 			<div class="category-list">
-				{{ range $name, $taxonomy := .Site.Taxonomies.categories }}
-					{{ $sortedNames := sort (keys $taxonomy) }}
-					{{ range $sortedNames }}
-						<a href="{{ $.Site.BaseURL }}categories/{{ . | urlize }}/"><button>{{ . | title | safeHTML }}</button></a>
-					{{ end }}
+				{{ range $categories }}
+				<a href="{{ .Page.Permalink }}"><button>{{ .Page.Title | safeHTML }}</button></a>
 				{{ end }}
 			</div>
 		</div>
