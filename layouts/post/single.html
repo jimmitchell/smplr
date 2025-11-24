@@ -30,7 +30,6 @@
         </p>
         {{- end }}
         {{- end }}
-        
         {{- if or (templates.Exists "partials/reply-by-email.html") (templates.Exists "partials/conversation-link.html") (templates.Exists "partials/reply-on-mastodon.html") (templates.Exists "partials/tinylytics.html") }}
         <ul class="reply-buttons">
             {{- if and (templates.Exists "partials/tinylytics.html") (.Site.Params.show_kudos) (ne (.Site.Params.site_id | default "") "") }}

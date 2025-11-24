@@ -7,9 +7,7 @@
            onChange="submitSearch(this.value.toLowerCase());"
            autofocus />
 </form>
-
 <div id="list_results"
      data-max-results="{{ $.Site.Params.search_results | default 5 }}">
 </div>
-
 <script defer type="text/javascript" src="{{ "js/search.js" | relURL }}"></script>

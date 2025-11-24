@@ -7,48 +7,31 @@
             {{- $home_categories = $home_categories | append (trim . " ") }}
         {{- end }}
     {{- end }}
+    {{- $pinnedPost := false }}
+    {{- if .Site.Params.pinned_category }}
+        {{- $pinnedCategoryPages := where $allPages "Params.categories" "intersect" (slice .Site.Params.pinned_category) }}
+        {{- $pinnedPost = first 1 $pinnedCategoryPages }}
+    {{- end }}
     {{- $pages := $allPages }}
     {{- if $home_categories }}
         {{- $pages = where $allPages "Params.categories" "intersect" $home_categories }}
     {{- end }}
-    {{- $paginator := .Paginate $pages (index .Site.Params "archive-paginate" | default 20) }}
+    {{- $filteredPages := $pages }}
+    {{- if $pinnedPost }}
+        {{- $filteredPages = where $pages "Permalink" "not in" (slice (index $pinnedPost 0).Permalink) }}
+    {{- end }}
+    {{- $paginator := .Paginate $filteredPages (index .Site.Params "archive-paginate" | default 20) }}
+    {{- if and $pinnedPost (eq .Paginator.PageNumber 1) }}
+        {{- range first 1 $pinnedPost }}
+        <article class="h-entry pinned {{ range $index, $category := .Params.categories }}{{ if gt $index 0 }} {{ end }}{{ $category | lower | urlize }}{{ end }}">
+            <div class="pinned-badge">{{ .Site.Params.pinned_category }}</div>
+            {{- partial "post-content.html" . }}
+        </article>
+        {{- end }}
+    {{- end }}
     {{- range $paginator.Pages  }}
     <article class="h-entry {{ range $index, $category := .Params.categories }}{{ if gt $index 0 }} {{ end }}{{ $category | lower | urlize }}{{ end }}">
-    {{- if .Title }}
-        <h2 class="post-title"><a href="{{ .Permalink }}" class="u-url">{{ .Title | safeHTML }}</a></h2>
-        <p class="post-date">
-            <time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">
-                {{- if .Site.Params.use_short_date }}{{ .Date | time.Format ":date_short" }}{{- else }}{{ .Date | time.Format ":date_full" }}{{- end }}{{- if .Site.Params.show_read_time }}&nbsp;<span class="sep">&bull;</span>&nbsp;{{ .ReadingTime }}&nbsp;{{ T "min read" }}{{- end }}
-            </time>
-        </p>
-        {{- if .Site.Params.show_full_post }}
-        {{ .Content }}
-        {{- else }}
-        <p>{{ .Summary | safeHTML }}</p>
-        <p><a href="{{ .Permalink }}" class="u-url">{{ T "Continue reading" }} →</a></p>
-        {{- end }}
-    {{- else if in .RawContent "<!--more-->"}}
-        <p class="post-date btm-margin">
-            <time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">
-                <a href="{{ .Permalink }}" class="u-url">{{- if .Site.Params.use_short_date }}{{ .Date | time.Format ":date_short" }}{{- else }}{{ .Date | time.Format ":date_full" }}{{- end }} →</a>
-            </time>
-        </p>
-        {{- if .Site.Params.show_full_post }}
-        {{ .Content }}
-        {{- else }}
-        <p>{{ .Summary | safeHTML }}</p>
-        {{- if .Truncated }}
-        <p><a href="{{ .Permalink }}" class="u-url">{{ T "Continue reading" }} →</a></p>
-        {{- end }}
-        {{- end }}
-    {{- else }}
-        <p class="post-date btm-margin">
-            <time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">
-                <a href="{{ .Permalink }}" class="u-url">{{- if .Site.Params.use_short_date }}{{ .Date | time.Format ":date_short" }}{{- else }}{{ .Date | time.Format ":date_full" }}{{- end }} →</a>
-            </time>
-        </p>
-        {{ .Content }}
-    {{- end }}
+        {{- partial "post-content.html" . }}
     </article>
     {{- end }}
     {{- if or ($paginator.HasNext) ($paginator.HasPrev) }}

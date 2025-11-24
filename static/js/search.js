@@ -1,8 +1,6 @@
-// Get search results container and maxResults from data attribute
 var resultsContainer = document.getElementById("list_results");
 var maxResults = parseInt(resultsContainer.dataset.maxResults, 10) || 5;
 
-// Store fetched archive results
 var archive_results = {};
 
 function runSearch(q) {

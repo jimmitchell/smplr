@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<head>
+	<link href="{{ "css/main.css" | relURL }}?{{ .Site.Params.theme_seconds }}" rel="preload stylesheet" as="style">
+	<meta http-equiv="Refresh" content="0; url='{{ .Params.redirect }}'" />
+	<script>
+		window.location.href = "{{ .Params.redirect }}"
+	</script>
+</head>
+<body></body>
+</html>

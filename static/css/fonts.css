@@ -1,26 +1,26 @@
 @font-face {
-  font-family: "Proxima Nova";
+  font-family: "Inter";
   font-display: swap;
-  src: url('../fonts/Proxima-Nova_Regular.woff2') format('woff2');
+  src: url('../fonts/Inter-Regular.woff2') format('woff2');
   font-weight: 400;
 }
 @font-face {
-  font-family: "Proxima Nova";
+  font-family: "Inter";
   font-display: swap;
-  src: url('../fonts/Proxima-Nova_Italic.woff2') format('woff2');
+  src: url('../fonts/Inter-Italic.woff2') format('woff2');
   font-style: italic;
   font-weight: 400;
 }
 @font-face {
-  font-family: "Proxima Nova";
+  font-family: "Inter";
   font-display: swap;
-  src: url('../fonts/Proxima-Nova_Bold.woff2') format('woff2');
+  src: url('../fonts/Inter-Bold.woff2') format('woff2');
   font-weight: 700;
 }
 @font-face {
-  font-family: "Proxima Nova";
+  font-family: "Inter";
   font-display: swap;
-  src: url('../fonts/Proxima-Nova_Bold_Italic.woff2') format('woff2');
+  src: url('../fonts/Inter-BoldItalic.woff2') format('woff2');
   font-style: italic;
   font-weight: 700;
 }

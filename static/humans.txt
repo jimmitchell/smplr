@@ -12,5 +12,5 @@ From: Huntington Beach, CA, USA
 
 Standards: HTML5, CSS3
 Software: Hugo, Git, Nova, Pixelmator Pro
-Design Repo: https://github.com/jimmitchell/mnml
+Design Repo: https://github.com/jimmitchell/smplr
 Hosted by: Micro.blog
