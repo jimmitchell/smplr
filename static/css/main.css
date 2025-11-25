@@ -1276,12 +1276,13 @@ img.bookshelf__cover {
     
     .nav-menu a:link,
     .nav-menu a:visited {
-        margin: 0 0.3rem;
-        display: inline-block;
-        border: 1px solid var(--accent-2);
-        padding: 2px 1rem;
-        border-radius: var(--border-radius);
         background: var(--accent-1);
+        border-radius: var(--border-radius);
+        border: 1px solid var(--accent-2);
+        color: var(--accent-3);
+        display: inline-block;
+        margin: 0 0.3rem;
+        padding: 2px 1rem;
     }
     
     .nav-menu a:hover,
