@@ -25,7 +25,7 @@ ul.grid {
 
 ul.grid li {
 	background: var(--accent-1);
-	border-radius: 1rem;
+	border-radius: var(--border-radius);
 	margin: 0;
 	overflow: hidden;
 	padding: 0;
