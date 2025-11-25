@@ -1238,7 +1238,7 @@ img.bookshelf__cover {
 
 @media only screen and (max-width: 768px) {
     body {
-        line-height: 1.5111;
+        line-height: 1.6;
         overscroll-behavior: contain;
     }
     
@@ -1262,11 +1262,10 @@ img.bookshelf__cover {
     
     header .site-title {
       font-size: 3rem;
+      margin-bottom: 1rem;
     }
     
     .site-nav {
-        background: var(--background);
-        font-size: 2rem;
         display: block;
     }
     
