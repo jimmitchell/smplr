@@ -1257,12 +1257,22 @@ img.bookshelf__cover {
     .nav-menu {
         width: 100%;
         text-align: center;
-        font-size: 2rem;
         margin-top: 1rem;
+    }
+    
+    header .site-title {
+      font-size: 3rem;
+    }
+    
+    .site-nav {
+        background: var(--background);
+        font-size: 2rem;
+        display: block;
     }
     
     .nav-menu {
         font-size: 1.8rem;
+        justify-content: space-evenly;
     }
     
     .nav-menu a:link,
@@ -1270,47 +1280,6 @@ img.bookshelf__cover {
         margin: 0 0.75rem;
         display: inline-block;
     }
-
-    /* .header {
-        margin: 0;
-    }
-
-    .site-title {
-        font-size: 1.8rem;
-    }
-*/
-    .site-nav {
-        background: var(--background);
-        font-size: 2rem;
-        display: block;
-    }
-
-    /* .site-nav ul {
-        height: 100dvmax;
-        justify-content: start;
-        padding: 4rem 0;
-    } */
-
-    /* .nav-menu {
-        background-color: var(--background);
-        border-radius: 0;
-        flex-direction: column;
-        height: 100dvmax;
-        left: -100%;
-        position: fixed;
-        text-align: center;
-        top: 0;
-        transition: 0.3s;
-        width: 100%;
-        z-index: 10000;
-    }
-
-    .nav-menu.active {
-        left: 0;
-        margin: 0;
-        padding: 10rem 0;
-        top: 0;
-    } */
 
     .nav-item {
         margin: 1.5rem 0;
