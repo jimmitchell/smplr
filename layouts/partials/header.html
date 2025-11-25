@@ -1,8 +1,8 @@
 <header class="header">
     <nav class="site-nav">
+        {{- $avatar := .Site.Params.custom_avatar }}
         <h1 class="site-title">
-            <a href="/">
-                <img id="avatar" class="u-photo" src="{{ if $avatar }}{{ $avatar }}{{ else }}{{ .Site.Author.avatar }}{{ end }}" width="36" height="36" />{{ .Site.Title }}
+            <a href="/"><img id="avatar" class="u-photo" src="{{ if $avatar }}{{ $avatar }}{{ else }}{{ .Site.Author.avatar }}{{ end }}" width="36" height="36" />{{ .Site.Title }}
             </a>
         </h1>
         <ul class="nav-menu">
