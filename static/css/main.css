@@ -900,7 +900,7 @@ select:active {
   appearance: none;
   background: var(--link);
   background-repeat: no-repeat;
-  background-position: calc(100% - 3px) center;
+  background-position: calc(100% - 3px) 60%;
   background-size: 2rem;
   border-color: var(--link);
   color: var(--background);
@@ -913,21 +913,21 @@ select:focus {
 
 @media (prefers-color-scheme: light) {
   select {
-    background-image: url(arrow-dark.svg);
+    background-image: url(img/arrow-dark.svg);
   }
   select:hover,
   select:active {
-    background-image: url(arrow-light-hover.svg);
+    background-image: url(img/arrow-light-hover.svg);
   }
 }
 
 @media (prefers-color-scheme: dark) {
   select {
-    background-image: url(arrow-light.svg);
+    background-image: url(img/arrow-light.svg);
   }
   select:hover,
   select:active {
-    background-image: url(arrow-dark-hover.svg);
+    background-image: url(img/arrow-dark-hover.svg);
   }
 }
 
@@ -1241,8 +1241,37 @@ img.bookshelf__cover {
         line-height: 1.5111;
         overscroll-behavior: contain;
     }
+    
+    header {
+        margin: 4rem 0 2rem;
+    }
+    
+    .navbar {
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 4rem;
+    }
+    
+    header .site-title,
+    .site-nav {
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+    
+    .site-nav {
+        font-size: 1.8rem;
+    }
+    
+    .site-nav a:link,
+    .site-nav a:visited {
+        margin: 0 0.75rem;
+        display: inline-block;
+    }
 
-    .header {
+    /* .header {
         margin: 0;
     }
 
@@ -1253,7 +1282,7 @@ img.bookshelf__cover {
     .site-nav {
         background: var(--background);
         font-size: 2rem;
-    }
+    } */
 
     /* .site-nav ul {
         height: 100dvmax;
