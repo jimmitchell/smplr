@@ -7,7 +7,7 @@
     --header-width: 94rem;
     --site-width: 70rem;
     --photos-wide: 120rem;
-    --border-radius: 0.3rem;
+    --border-radius: 0.4rem;
 }
 
 @media (prefers-color-scheme: light) {
