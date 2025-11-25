@@ -1271,6 +1271,7 @@ img.bookshelf__cover {
     .nav-menu {
         font-size: 1.4rem;
         display: block;
+        margin: 2rem 0 1rem 0;
     }
     
     .nav-menu a:link,
@@ -1292,7 +1293,7 @@ img.bookshelf__cover {
     }
 
     .nav-item {
-        margin: 1.5rem 0;
+        margin: .3rem 0;
         display: inline-block;
     }
 
