@@ -1285,10 +1285,10 @@ img.bookshelf__cover {
     
     .nav-menu a:hover,
     .nav-menu a:active {
-        border: 1px solid var(--accent-3);
-        background: var(--accent-2);
+        border: 1px solid var(--link);
+        background: var(--link);
         text-decoration: none;
-        color: var(--accent-3);
+        color: var(--background);
     }
 
     .nav-item {
