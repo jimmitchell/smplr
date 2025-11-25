@@ -1278,11 +1278,12 @@ img.bookshelf__cover {
     .site-title {
         font-size: 1.8rem;
     }
-
+*/
     .site-nav {
         background: var(--background);
         font-size: 2rem;
-    } */
+        display: block;
+    }
 
     /* .site-nav ul {
         height: 100dvmax;
