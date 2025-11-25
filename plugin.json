@@ -26,11 +26,6 @@
       "type": "boolean"
     },
     {
-      "field": "params.hide_avatar",
-      "label": "Hide header avatar",
-      "type": "boolean"
-    },
-    {
       "field": "params.custom_avatar",
       "label": "Custom avatar",
       "type": "string",
