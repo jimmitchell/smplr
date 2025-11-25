@@ -284,7 +284,7 @@ pre {
     line-height: 1.5;
     margin: 3rem 0;
     overflow-x: auto;
-    padding: 3rem;
+    padding: 2.5rem;
     scrollbar-color: #64676e #101115;
     white-space: pre;
 }
@@ -674,7 +674,7 @@ article ol li {
     font-size: 1.2rem;
     background: #272727;
     border: none;
-    padding: 1px 3px;
+    padding: 0 5px;
     color: #777;
     transition:
         color 0.15s ease-in-out,
