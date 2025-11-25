@@ -525,14 +525,14 @@ single article {
 
 .pinned-badge {
     background: var(--link);
-    border-radius: 3rem;
+    border-radius: var(--border-radius);
     color: var(--background);
     font-size: 1.6rem;
     position: absolute;
     top: -1.5rem;
     left: 0.8rem;
     margin: 0;
-    padding: 0.1rem 1.2rem;
+    padding: 0.05rem 1rem;
 }
 
 .page-title,
