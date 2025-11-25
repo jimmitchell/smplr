@@ -1,12 +1,12 @@
 <header class="header">
     <nav class="site-nav">
+        {{- if .Site.Params.hide_avatar }}
+        <h1 class="site-title"><a href="/">{{ .Site.Title }}</a></h1>
+        {{- else }}
         {{- $avatar := .Site.Params.custom_avatar }}
-        <a href="/" class="nav-header">
-            <img class="avatar u-photo" src="{{ if $avatar }}{{ $avatar }}{{ else }}{{ .Site.Author.avatar }}{{ end }}" width="80" height="80" />
-            <h1 class="site-title">{{ .Site.Title }}</h1>
-        </a>
+        <h1 class="site-title"><a href="/"><img id="avatar" class="u-photo" src="{{ if $avatar }}{{ $avatar }}{{ else }}{{ .Site.Author.avatar }}{{ end }}" width="36" height="36" />{{ .Site.Title }}</a></h1>
+        {{- end }}
         <ul class="nav-menu">
-            <li class="nav-item"><a href="/">Home</a></li>
         {{- range .Site.Menus.main }}
             {{- if .Page.Params.redirect_url }}
             <li class="nav-item"><a href="{{ .Page.Params.redirect_url }}">{{ .Name | safeHTML }}</a></li>
@@ -15,5 +15,10 @@
             {{- end }}
         {{- end }}
         </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </nav>
 </header>
