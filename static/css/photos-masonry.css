@@ -5,7 +5,7 @@ main.photos {
 
 main.photos-wide {
   margin: 0 auto;
-  max-width: var(--header-width);
+  max-width: var(--site-width);
 }
 
 .masonry-grid * {
