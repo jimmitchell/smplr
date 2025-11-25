@@ -1260,8 +1260,8 @@ img.bookshelf__cover {
         margin-top: 1rem;
     }
     
-    header .site-title {
-      font-size: 2.8rem;
+    .header .site-title {
+      font-size: 2.4rem;
       margin-bottom: 1rem;
     }
     
