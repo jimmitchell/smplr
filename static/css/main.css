@@ -467,20 +467,6 @@ main {
     padding: 0;
 }
 
-.hamburger {
-    display: none;
-}
-
-.bar {
-    background-color: var(--text);
-    display: block;
-    height: 2px;
-    margin: 3px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    width: 16px;
-}
-
 .nav-menu {
     align-items: center;
     display: flex;
@@ -1300,29 +1286,6 @@ img.bookshelf__cover {
 
     .nav-item {
         margin: 1.5rem 0;
-    }
-
-    .hamburger {
-        cursor: pointer;
-        display: block;
-        z-index: 10010;
-    }
-
-    .hamburger.active {
-        position: fixed;
-        right: 20px;
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(5px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-5px) rotate(-45deg);
     }
 
     .pinned {
