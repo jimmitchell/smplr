@@ -1254,19 +1254,19 @@ img.bookshelf__cover {
     }
     
     header .site-title,
-    .site-nav {
+    .nav-menu {
         width: 100%;
         text-align: center;
         font-size: 2rem;
         margin-top: 1rem;
     }
     
-    .site-nav {
+    .nav-menu {
         font-size: 1.8rem;
     }
     
-    .site-nav a:link,
-    .site-nav a:visited {
+    .nav-menu a:link,
+    .nav-menu a:visited {
         margin: 0 0.75rem;
         display: inline-block;
     }
