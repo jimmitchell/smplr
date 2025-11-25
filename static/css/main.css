@@ -1242,8 +1242,8 @@ img.bookshelf__cover {
         overscroll-behavior: contain;
     }
     
-    header {
-        margin: 4rem 0 2rem;
+    .header {
+        margin: 2rem 0 0 0;
     }
     
     .navbar {
@@ -1253,7 +1253,7 @@ img.bookshelf__cover {
         margin-bottom: 4rem;
     }
     
-    header .site-title,
+    .header .site-title,
     .nav-menu {
         width: 100%;
         text-align: center;
@@ -1261,7 +1261,7 @@ img.bookshelf__cover {
     }
     
     header .site-title {
-      font-size: 3rem;
+      font-size: 2.8rem;
       margin-bottom: 1rem;
     }
     
