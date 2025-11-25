@@ -5,9 +5,9 @@
     --font-weight-normal: 400;
     --font-weight-bold: 700;
     --header-width: 94rem;
-    --site-width: 70rem;
+    --site-width: 68rem;
     --photos-wide: 120rem;
-    --border-radius: 1rem;
+    --border-radius: 0.3rem;
 }
 
 @media (prefers-color-scheme: light) {
