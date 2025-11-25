@@ -1309,8 +1309,10 @@ img.bookshelf__cover {
         width: 100%;
     }
 
+    input[type="button"],
+    input[type="submit"],
     input.subscribe-submit {
-        padding: 9px;
+        padding: 1.2rem;
         width: 100%;
     }
 }
