@@ -1269,7 +1269,7 @@ img.bookshelf__cover {
     }
     
     .nav-menu {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         display: block;
     }
     
@@ -1278,8 +1278,9 @@ img.bookshelf__cover {
         margin: 0 0.3rem;
         display: inline-block;
         border: 1px solid var(--accent-2);
-        padding: .3rem 1.5rem;
-        border-radius: 2rem;
+        padding: 0 .8rem;
+        border-radius: var(--border-radius);
+        background: var(--accent-1);
     }
     
     .nav-menu a:hover,
