@@ -13,27 +13,27 @@
     :root {
         color-scheme: light;
         --background: #ffffff;
-        --text: #42444a;
+        --text: #241f1b;
         --link: #0d88d8;
-        --link-hover: #101115;
+        --link-hover: #000;
         --accent-1: #f6f6f6;
         --accent-2: #e2e2e4;
         --accent-3: #84868b;
-        --highlight: #e3e3e6;
+        --highlight: #f5f4e2;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         color-scheme: dark;
-        --background: #20232a;
+        --background: #241f1b;
         --text: #f7f7f7;
         --link: #45c8f7;
         --link-hover: #ffffff;
         --accent-1: #3d4149;
         --accent-2: #53565d;
         --accent-3: #d4d4d6;
-        --highlight: #53565d;
+        --highlight: #595b44;
     }
 }
 
