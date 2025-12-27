@@ -1,11 +1,6 @@
 <header class="header">
     <nav class="site-nav">
-        {{- if .Site.Params.hide_avatar }}
         <h1 class="site-title"><a href="/">{{ .Site.Title }}</a></h1>
-        {{- else }}
-        {{- $avatar := .Site.Params.custom_avatar }}
-        <h1 class="site-title"><a href="/"><img id="avatar" class="u-photo" src="{{ if $avatar }}{{ $avatar }}{{ else }}{{ .Site.Author.avatar }}{{ end }}" width="36" height="36" />{{ .Site.Title }}</a></h1>
-        {{- end }}
         <ul class="nav-menu">
         {{- range .Site.Menus.main }}
             {{- if .Page.Params.redirect_url }}

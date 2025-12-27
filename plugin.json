@@ -26,17 +26,6 @@
       "type": "boolean"
     },
     {
-      "field": "params.hide_avatar",
-      "label": "Hide header avatar",
-      "type": "boolean"
-    },
-    {
-      "field": "params.custom_avatar",
-      "label": "Custom avatar",
-      "type": "string",
-      "placeholder": "Enter a full URL to an image. Ignored if avatar is hidden."
-    },
-    {
       "field": "params.pinned_category",
       "label": "Pinned post category",
       "type": "string",

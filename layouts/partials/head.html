@@ -37,16 +37,8 @@
   <link rel="author" href="humans.txt" />
   <link href="{{ "css/fonts.css" | relURL }}?{{ .Site.Params.theme_seconds }}" rel="preload stylesheet" as="style">
   <link href="{{ "css/main.css" | relURL }}?{{ .Site.Params.theme_seconds }}" rel="preload stylesheet" as="style">
-  {{- if .Site.Params.masonry_layout }}
-  <link href="{{ "css/photos-masonry.css" | relURL }}?{{ .Site.Params.theme_seconds }}"rel="preload stylesheet" as="style">
-  {{- else }}
-  <link href="{{ "css/photos-grid.css" | relURL }}?{{ .Site.Params.theme_seconds }}"rel="preload stylesheet" as="style">
-  {{- end }}
   <meta name="color-scheme" content="light dark" />
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
   <meta name="theme-color" content="#20232a" media="(prefers-color-scheme: dark)" />
-  {{- if .Site.Params.narrow_header }}
-  <style>.site-nav {max-width:var(--site-width)}</style>
-  {{- end }}
   {{ partial "microblog_head.html" . }}
 </head>
