@@ -664,6 +664,7 @@ article ol li {
 
 .highlight button {
     position: absolute;
+    font-family: sans-serif;
     top: 0;
     right: 0;
     cursor: pointer;
