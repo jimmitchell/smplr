@@ -37,8 +37,8 @@
     {{- if or ($paginator.HasNext) ($paginator.HasPrev) }}
     <nav class="main-nav">
         <ul>
-            <li class="older">{{ if $paginator.HasNext }}<h4>Older</h4><a href="{{ $paginator.Next.URL }}">← "Previous"</a>{{ end }}</li>
-            <li class="newer">{{ if $paginator.HasPrev }}<h4>Newer</h4><a href="{{ $paginator.Prev.URL }}">"Next" →</a>{{ end }}</li>
+            <li class="older">{{ if $paginator.HasNext }}<a href="{{ $paginator.Next.URL }}">← "Older"</a>{{ end }}</li>
+            <li class="newer">{{ if $paginator.HasPrev }}<a href="{{ $paginator.Prev.URL }}">"Newer" →</a>{{ end }}</li>
         </ul>
     </nav>
     {{- end }}
