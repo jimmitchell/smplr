@@ -4,8 +4,7 @@
     --mono-space-font: SFMono-Regular, ui-monospace, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
     --font-weight-normal: 400;
     --font-weight-bold: 700;
-    --header-width: 60rem;
-    --site-width: 60rem;
+    --site-width: 64rem;
     --photos-wide: 120rem;
     --border-radius: 0.6rem;
 }
@@ -459,7 +458,7 @@ main {
     font-size: 1.6rem;
     justify-content: space-between;
     margin: 0 auto;
-    max-width: var(--header-width);
+    max-width: var(--site-width);
     padding: 0.75rem 2rem 0.5rem 2rem;
 }
 
@@ -1252,7 +1251,7 @@ main.photos {
 
 main.photos-wide {
   margin: 0 auto;
-  max-width: var(--header-width);
+  max-width: var(--site-width);
 }
 
 ul.grid * {
