@@ -25,8 +25,8 @@
     {{- if or (.NextInSection) (.PrevInSection) }}
     <nav class="main-nav">
         <ul>
-            <li>{{ if .PrevInSection }}<a href="{{ .PrevInSection.Permalink }}">← {{ T "Older" }}</a>{{ end }}</li>
-            <li>{{ if .NextInSection }}<a href="{{ .NextInSection.Permalink }}">{{ T "Newer" }} →</a>{{ end }}</li>
+            <li>{{ if .PrevInSection }}<a href="{{ .PrevInSection.Permalink }}">← {{ or .PrevInSection.Title T "Older" }}</a>{{ end }}</li>
+            <li>{{ if .NextInSection }}<a href="{{ .NextInSection.Permalink }}">{{ or .NextInSection.Title T "Newer" }} →</a>{{ end }}</li>
         </ul>
     </nav>
     {{- end }}
