@@ -1,11 +1,11 @@
 :root {
     color-scheme: light dark;
-    --sans-serif-font: "GTW", -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --serif-font: "PT Serif", "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052, serif;
     --mono-space-font: SFMono-Regular, ui-monospace, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
     --font-weight-normal: 400;
     --font-weight-bold: 700;
-    --header-width: 94rem;
-    --site-width: 68rem;
+    --header-width: 60rem;
+    --site-width: 60rem;
     --photos-wide: 120rem;
     --border-radius: 0.6rem;
 }
@@ -83,7 +83,7 @@ p {
 
 html {
     box-sizing: border-box;
-    font-family: var(--sans-serif-font);
+    font-family: var(--serif-font);
     font-size: 10px;
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
