@@ -925,21 +925,21 @@ select:focus {
 
 @media (prefers-color-scheme: light) {
   select {
-    background-image: url(img/arrow-dark.svg);
+    background-image: url(../img/arrow-dark.svg);
   }
   select:hover,
   select:active {
-    background-image: url(img/arrow-light-hover.svg);
+    background-image: url(../img/arrow-light-hover.svg);
   }
 }
 
 @media (prefers-color-scheme: dark) {
   select {
-    background-image: url(img/arrow-light.svg);
+    background-image: url(../img/arrow-light.svg);
   }
   select:hover,
   select:active {
-    background-image: url(img/arrow-dark-hover.svg);
+    background-image: url(../img/arrow-dark-hover.svg);
   }
 }
 
