@@ -1,8 +1,8 @@
-# smplr
+# mnml
 
 ![smplr](https://raw.githubusercontent.com/jimmitchell/smplr/main/icon.jpg)
 
-A clean and simple minimalist Micro.blog theme.
+A simple Micro.blog theme.
 
 ## Key Features
 
@@ -27,11 +27,11 @@ A clean and simple minimalist Micro.blog theme.
 - [Fediverse Creator](https://blog.joinmastodon.org/2024/07/highlighting-journalism-on-mastodon/) tag support.
 - Pagination on all post related pages.
 
-See the theme in action at [smplr.micro.blog](https://smplr.micro.blog).
+See the theme in action at [mnml.micro.blog](https://mnml.micro.blog).
 
 ## Image Classes
 
-**smplr** supports the following html image classes:
+**mnml** supports the following html image classes:
 
 - `.align-none`: An inline sized image without any alignment.
 - `.align-left`: An inline sized image that's left aligned which allows text to wrap around it.
@@ -40,21 +40,21 @@ See the theme in action at [smplr.micro.blog](https://smplr.micro.blog).
 - `.full-width`: A full width image that spans the entire width of the page. This is the same as adding an image using Markdown.
 - `.overflow`: A full width image that overflows the width of the page.
 
-Applying one of these classes to an image will allow you to control appearance and layout. It's far better to see it in action, so for more details and code examples, visit the **[smplr]** [style guide page](https://smplr.micro.blog/styleguide/#images-markdown-and-optional-html).
+Applying one of these classes to an image will allow you to control appearance and layout. It's far better to see it in action, so for more details and code examples, visit the **[mnml]** [style guide page](https://mnml.micro.blog/styleguide/#images-markdown-and-optional-html).
 
 ## Adding a Search Page
 
-**smplr** has a built-in Search shortcode to let you add a Search page if you so desire...
+**mnml** has a built-in Search shortcode to let you add a Search page if you so desire...
 
 1. Create a new Micro.blog page. Name it whatever you like with a url of whatever you like.
 2. In the page body, add the `{{< search >}}` shortcode.
 3. Visit your new search page and try it out.
 
-Search results default to 5 until you set your own value in the **smplr** plugin settings page.
+Search results default to 5 until you set your own value in the **mnml** plugin settings page.
 
 ## Special Thanks
 
-Thank you to the following for their **smplr** localization contributions:
+Thank you to the following for their **mnml** localization contributions:
 
 - Swedish: [@robertbirming](https://github.com/robertbirming)
 - Ukrainian & Russian: [@luxury-format](https://github.com/luxury-format)
@@ -63,4 +63,4 @@ Thank you to the following for their **smplr** localization contributions:
 
 ## Support
 
-If you like **smplr**, consider supporting it by [buying me a coffee](https://buymeacoffee.com/jim.mitchell).
+If you like **mnml**, consider supporting it by [buying me a coffee](https://buymeacoffee.com/jim.mitchell).

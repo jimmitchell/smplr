@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "title": "smplr",
-  "description": "An even more minimal, simple Micro.blog theme.",
+  "description": "A simple Micro.blog theme.",
   "fields": [
     {
       "field": "defaultContentLanguage",
@@ -23,6 +23,11 @@
     {
       "field": "params.narrow_header",
       "label": "Use a narrow site header",
+      "type": "boolean"
+    },
+    {
+      "field": "params.hide_avatar",
+      "label": "Hide header avatar",
       "type": "boolean"
     },
     {
@@ -82,16 +87,6 @@
     {
       "field": "params.all_formats",
       "label": "Display all image formats (jpg, png, webp, etc.).",
-      "type": "boolean"
-    },
-    {
-      "field": "params.masonry_layout",
-      "label": "Use photos masonry layout",
-      "type": "boolean"
-    },
-    {
-      "field": "params.full_width_photos",
-      "label": "Use a wider photos page",
       "type": "boolean"
     },
     {
