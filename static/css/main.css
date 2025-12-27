@@ -1029,6 +1029,15 @@ sup a:active {
     padding: 0;
 }
 
+.main-nav li.newer {
+    text-align: right;
+}
+
+.main-nav h4 {
+    color: var(--accent-3);
+    margin-bottom: 1rem;
+}
+
 #search {
     display: none;
 }
@@ -1413,6 +1422,16 @@ ul.grid img:hover {
 
     input.subscribe-submit {
         padding: 9px;
+        width: 100%;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+    }
+
+    .main-nav li,
+    .main-nav li.newer {
+        text-align: left;
         width: 100%;
     }
 }
