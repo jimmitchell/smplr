@@ -1103,6 +1103,7 @@ footer p {
 
 .to-top:hover {
     opacity: 100%;
+    background: var(--link);
 }
 
 .to-top svg {
