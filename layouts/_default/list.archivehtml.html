@@ -2,19 +2,6 @@
 <main class="archive">
 	<article>
 		<h1 class="page-title">{{ .Title | safeHTML }}</h1>
-		
-		{{- $categories := .Site.Taxonomies.categories.Alphabetical }}
-		{{- $category_count := .Site.Params.show_category_count }}
-		{{- if and (.Site.Params.show_categories) (gt (len $categories) 0) }}
-		<div class="archive-categories">
-			<div class="category-list">
-				{{ range $categories }}
-				<a href="{{ .Page.Permalink }}"><button>{{ .Page.Title | safeHTML }}{{- if $category_count }}&nbsp;<span class="post-count">({{ .Count }})</span>{{- end }}</button></a>
-				{{ end }}
-			</div>
-		</div>
-		{{- end }}
-
 		{{- $posts := where .Site.RegularPages "Type" "post" }}
 		{{- $groupedByYear := $posts.GroupByDate "2006" }}
 		{{- $groupedByYearMonth := $posts.GroupByDate "2006-01" }}

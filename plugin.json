@@ -69,16 +69,6 @@
       "type": "boolean"
     },
     {
-      "field": "params.show_categories",
-      "label": "Show categories on archives page",
-      "type": "boolean"
-    },
-    {
-      "field": "params.show_category_count",
-      "label": "Show post count for archive page categories",
-      "type": "boolean"
-    },
-    {
       "field": "params.photos_category",
       "label": "Photos category",
       "type": "string",
@@ -99,21 +89,6 @@
       "label": "Number of search results",
       "placeholder": "Defaults to 5 if left blank.",
       "type": "string"
-    },
-    {
-      "field": "params.hide_copyright",
-      "label": "Hide the footer copyright",
-      "type": "boolean"
-    },
-    {
-      "field": "params.footer_rss",
-      "label": "Add a RSS link in the footer",
-      "type": "boolean"
-    },
-    {
-      "field": "params.hide_credit",
-      "label": "Hide footer credits",
-      "type": "boolean"
     }
   ]
 }
