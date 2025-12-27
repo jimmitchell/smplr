@@ -25,8 +25,8 @@
     {{- if or (.NextInSection) (.PrevInSection) }}
     <nav class="main-nav">
         <ul>
-            <li class="older">{{ if .PrevInSection }}<h4>Older</h4><a href="{{ .PrevInSection.Permalink }}">← {{ or .PrevInSection.Title "Previous" }}</a>{{ end }}</li>
-            <li class="newer">{{ if .NextInSection }}<h4>Newer</h4><a href="{{ .NextInSection.Permalink }}">{{ or .NextInSection.Title "Next" }} →</a>{{ end }}</li>
+            <li class="older">{{ if .PrevInSection }}<h4>Older</h4><a href="{{ .PrevInSection.Permalink }}">← {{ or .PrevInSection.Title (.PrevInSection.Date | time.Format ":date_full") }}</a>{{ end }}</li>
+            <li class="newer">{{ if .NextInSection }}<h4>Newer</h4><a href="{{ .NextInSection.Permalink }}">{{ or .NextInSection.Title (.NextInSection.Date | time.Format ":date_full") }} →</a>{{ end }}</li>
         </ul>
     </nav>
     {{- end }}
