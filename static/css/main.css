@@ -432,7 +432,7 @@ main {
 }
 
 .site-title {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: var(--font-weight-bold);
 }
 
@@ -1332,10 +1332,6 @@ ul.grid img:hover {
 
     .header {
         margin: 0;
-    }
-
-    .site-title {
-        font-size: 1.8rem;
     }
 
     .site-nav {
