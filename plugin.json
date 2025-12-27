@@ -33,11 +33,6 @@
       "type": "boolean"
     },
     {
-      "field": "params.show_read_time",
-      "label": "Show read time on titled posts",
-      "type": "boolean"
-    },
-    {
       "field": "params.enable_code_copy_button",
       "label": "Enable copy button for code blocks",
       "type": "boolean"
