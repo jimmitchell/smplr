@@ -27,7 +27,7 @@
 				{{- range .Pages }}
 				<div class="post-container" data-year="{{ .Date.Format "2006" }}" data-year-month="{{ .Date.Format "2006-01" }}">
 					<p class="post-date h-entry">
-						<a href="{{ .Permalink }}">{{- if .Site.Params.use_short_date }}{{ .Date | time.Format ":date_short" }}{{- else }}{{ .Date | time.Format ":date_full" }}{{- end }} →</a>
+						<a href="{{ .Permalink }}">{{ .Date | time.Format ":date_full" }} →</a>
 					</p>
 					<div class="entry">
 						<p>{{- if .Title }}<b>{{ .Title | safeHTML }}:</b>&nbsp;{{- end }}{{ .Summary | safeHTML | truncate 300  }}</p>

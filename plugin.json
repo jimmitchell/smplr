@@ -16,16 +16,6 @@
       "placeholder": "@username@mastodon.instance"
     },
     {
-      "field": "params.use_short_date",
-      "label": "Use a short date format",
-      "type": "boolean"
-    },
-    {
-      "field": "params.narrow_header",
-      "label": "Use a narrow site header",
-      "type": "boolean"
-    },
-    {
       "field": "params.pinned_category",
       "label": "Pinned post category",
       "type": "string",

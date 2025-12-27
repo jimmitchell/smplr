@@ -3,7 +3,7 @@
 	<h2 class="post-title"><a href="{{ $post.Permalink }}" class="u-url">{{ $post.Title | safeHTML }}</a></h2>
 	<p class="post-date">
 		<time class="dt-published" datetime="{{ $post.Date.Format "2006-01-02 15:04:05 -0700" }}">
-			{{- if $post.Site.Params.use_short_date }}{{ $post.Date | time.Format ":date_short" }}{{- else }}{{ $post.Date | time.Format ":date_full" }}{{- end }}{{- if $post.Site.Params.show_read_time }}&nbsp;<span class="sep">&bull;</span>&nbsp;{{ $post.ReadingTime }}&nbsp;{{ T "min read" }}{{- end }}
+			{{ $post.Date | time.Format ":date_full" }}
 		</time>
 	</p>
 	{{- if $post.Site.Params.show_full_post }}
@@ -15,7 +15,7 @@
 {{- else if in $post.RawContent "<!--more-->"}}
 	<p class="post-date btm-margin">
 		<time class="dt-published" datetime="{{ $post.Date.Format "2006-01-02 15:04:05 -0700" }}">
-			<a href="{{ $post.Permalink }}" class="u-url">{{- if $post.Site.Params.use_short_date }}{{ $post.Date | time.Format ":date_short" }}{{- else }}{{ $post.Date | time.Format ":date_full" }}{{- end }} →</a>
+			<a href="{{ $post.Permalink }}" class="u-url">{{ $post.Date | time.Format ":date_full" }} →</a>
 		</time>
 	</p>
 	{{- if $post.Site.Params.show_full_post }}
@@ -29,7 +29,7 @@
 {{- else }}
 	<p class="post-date btm-margin">
 		<time class="dt-published" datetime="{{ $post.Date.Format "2006-01-02 15:04:05 -0700" }}">
-			<a href="{{ $post.Permalink }}" class="u-url">{{- if $post.Site.Params.use_short_date }}{{ $post.Date | time.Format ":date_short" }}{{- else }}{{ $post.Date | time.Format ":date_full" }}{{- end }} →</a>
+			<a href="{{ $post.Permalink }}" class="u-url">{{ $post.Date | time.Format ":date_full" }} →</a>
 		</time>
 	</p>
 	{{ $post.Content }}

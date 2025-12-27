@@ -15,7 +15,7 @@
         {{- end }}
         {{- if .Title }}
             <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title | safeHTML }}</a></h2>
-            <p class="post-date">{{- if .Site.Params.use_short_date }}{{ .Date | time.Format ":date_short" }}{{- else }}{{ .Date | time.Format ":date_full" }}{{- end }}{{- if .Site.Params.show_read_time }}&nbsp;<span class="sep">&bull;</span>&nbsp;{{ .ReadingTime }}&nbsp;{{ T "min read" }}{{- end }}</p>
+            <p class="post-date">{{- if .Site.Params.use_short_date }}{{ .Date | time.Format ":date_short" }}{{- else }}{{ .Date | time.Format ":date_full" }}{{- end }}</p>
             {{- if or (.Site.Params.show_full_post) (.Site.Params.category_full_post) }}
             {{ .Content }}
             {{- else }}
