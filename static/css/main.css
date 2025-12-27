@@ -13,13 +13,13 @@
     :root {
         color-scheme: light;
         --background: #ffffff;
-        --text: #241f1b;
+        --text: #333022;
         --link: #0d88d8;
         --link-hover: #000;
         --accent-1: #f6f6f6;
         --accent-2: #e2e2e4;
         --accent-3: #84868b;
-        --highlight: #f5f4e2;
+        --highlight: #eeedda;
     }
 }
 
