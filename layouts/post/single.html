@@ -22,6 +22,11 @@
             {{ .Content }}
         </div>
     </article>
+    {{- if .Site.Params.include_conversation }}
+    <div>
+        <script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>
+    </div>
+    {{- end }}
     {{- if or (.NextInSection) (.PrevInSection) }}
     <nav class="main-nav">
         <ul>
