@@ -416,7 +416,7 @@ main {
 
 .header {
     background: var(--background);
-    margin: 2rem 0;
+    margin: 2rem 0 0 0;
     width: 100%;
     z-index: 10000;
 }
@@ -1012,7 +1012,7 @@ sup a:active {
 
 .main-nav {
     margin: 0;
-    padding: 1rem 0 2rem 0;
+    padding: 1rem 0;
 }
 
 .main-nav ul {
@@ -1311,6 +1311,18 @@ ul.grid img:hover {
 	-webkit-filter: brightness(70%);
 	filter: brightness(70%);
 	transition: ease-in-out 0.25s;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
 }
 
 @media (max-width: 600px) {
