@@ -498,7 +498,7 @@ article {
 }
 
 article:last-of-type {
-    margin-bottom: 4rem;
+    margin-bottom: 0;
 }
 
 article h2,
@@ -1011,7 +1011,7 @@ sup a:active {
 }
 
 .main-nav {
-    margin: 0;
+    margin: 4rem 0 0 0;
     padding: 1rem 0;
 }
 
