@@ -4,7 +4,7 @@
     --mono-space-font: SFMono-Regular, ui-monospace, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
     --font-weight-normal: 400;
     --font-weight-bold: 700;
-    --site-width: 64rem;
+    --site-width: 66rem;
     --photos-wide: 120rem;
     --border-radius: 0.6rem;
 }
@@ -13,12 +13,12 @@
     :root {
         color-scheme: light;
         --background: #ffffff;
-        --text: #242424;
-        --link: #1c91e0;
+        --text: #555;
+        --link: #009688;
         --link-hover: #000;
         --accent-1: #e7e7e7;
         --accent-2: #d1d1d1;
-        --accent-3: #898989;
+        --accent-3: #ababab;
         --highlight: #eeedda;
     }
 }
@@ -28,7 +28,7 @@
         color-scheme: dark;
         --background: #242424;
         --text: #f8f8f8;
-        --link: #65c0e1;
+        --link: #7dc0af;
         --link-hover: #ffffff;
         --accent-1: #393939;
         --accent-2: #5a5a5a;
