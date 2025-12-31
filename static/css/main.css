@@ -1156,6 +1156,7 @@ a.tinylytics_webring {
     object-fit: cover !important;
     aspect-ratio: 1 / 1;
     margin: 0 !important;
+    border-radius: 0 !important;
 }
 
 .microblog_collection img:hover {
