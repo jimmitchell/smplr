@@ -197,7 +197,6 @@ figure {
 
 figcaption {
     background: var(--accent-1);
-    border-radius: var(--border-radius);
     color: var(--accent-3);
     display: block;
     font-size: 1.4rem;
@@ -280,7 +279,6 @@ tt {
 
 pre {
     background: #101115;
-    border-radius: 0.5rem;
     color: #f8f8f8;
     line-height: 1.5;
     margin: 3rem 0;
@@ -423,7 +421,6 @@ main {
 }
 
 .u-photo {
-    border-radius: var(--border-radius);
     display: inline;
     height: auto;
     margin-right: 8px;
@@ -572,7 +569,6 @@ single article {
 
 article img,
 article video {
-    border-radius: var(--border-radius);
     display: block;
     height: auto;
     margin: 3rem auto;
@@ -679,7 +675,6 @@ article ol li {
         background 0.15s ease-in-out,
         border 0.15s ease-in-out;
     border: 2px solid #161616;
-    border-radius: 6px;
 }
 
 .gist .highlight button {
@@ -780,7 +775,6 @@ a.category:active,
 .microblog_post {
     background: var(--accent-1);
     border: 1px solid var(--accent-2);
-    border-radius: var(--border-radius);
     margin-bottom: 1rem;
     padding: 2.3rem 2rem;
 }
@@ -802,7 +796,6 @@ a.category:active,
 }
 
 .microblog_user img {
-    border-radius: var(--border-radius);
     display: inline-block;
     height: auto;
     margin-top: -2px;
@@ -840,7 +833,6 @@ a.category:active,
 .microblog_reply_form {
     background: var(--accent-1);
     border: 1px solid var(--accent-2);
-    border-radius: var(--border-radius);
     padding: 1rem 2rem;
 }
 
@@ -956,7 +948,6 @@ select:focus {
 
 .info {
     background-color: var(--accent-1);
-    border-radius: 1rem;
     color: var(--text);
     padding: 2rem 3rem;
     text-align: center;
@@ -1037,31 +1028,6 @@ sup a:active {
 #list_results {
     display: none;
     z-index: 10 !important;
-}
-
-#guestbooks___guestbook-made-with {
-    color: var(--accent-3);
-}
-
-#guestbooks___guestbook-messages-container blockquote {
-    border: none;
-    color: var(--text);
-    font-style: normal;
-    margin: 0;
-    padding: 0;
-}
-
-#guestbooks___guestbook-messages-container > div {
-    background: var(--accent-1);
-    border: 1px solid var(--accent-2);
-    border-radius: var(--border-radius);
-    margin: 1.5rem 0;
-    padding: 0.1rem 3rem 2rem;
-}
-
-#guestbooks___challenge-answer-container br,
-.guestbooks___input-container label[for="challengeQuestionAnswer"] {
-    display: none;
 }
 
 footer {
@@ -1190,7 +1156,6 @@ a.tinylytics_webring {
     object-fit: cover !important;
     aspect-ratio: 1 / 1;
     margin: 0 !important;
-    border-radius: var(--border-radius) !important;
 }
 
 .microblog_collection img:hover {
@@ -1274,7 +1239,6 @@ ul.grid {
 
 ul.grid li {
 	background: var(--accent-1);
-	border-radius: 1rem;
 	margin: 0;
 	overflow: hidden;
 	padding: 0;
