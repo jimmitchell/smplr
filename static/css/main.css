@@ -6,7 +6,6 @@
     --font-weight-bold: 700;
     --font-weight-black: 900;
     --site-width: 72rem;
-    --photos-wide: 120rem;
     --border-radius: 0.6rem;
 }
 
@@ -102,7 +101,7 @@ body {
     font-kerning: normal;
     font-size: 2rem;
     font-weight: var(--font-weight-normal);
-    line-height: 1.5666;
+    line-height: 1.6;
     width: 100%;
     margin: 0;
     text-rendering: geometricPrecision;
@@ -113,11 +112,11 @@ body {
 }
 
 ::-moz-selection {
-    background: var(--accent-2);
+    background: var(--highlight);
 }
 
 ::selection {
-    background: var(--accent-2);
+    background: var(--highlight);
 }
 
 a {
