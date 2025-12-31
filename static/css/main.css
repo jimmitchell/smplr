@@ -5,7 +5,7 @@
     --font-weight-normal: 400;
     --font-weight-bold: 700;
     --font-weight-black: 900;
-    --site-width: 70rem;
+    --site-width: 72rem;
     --photos-wide: 120rem;
     --border-radius: 0.6rem;
 }
@@ -430,7 +430,7 @@ main {
 }
 
 .site-title {
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: var(--font-weight-bold);
 }
 
@@ -544,7 +544,7 @@ single article {
 }
 
 .post-title {
-    margin-bottom: -15px;
+    margin-bottom: -1rem;
 }
 
 .post-title a:link,
