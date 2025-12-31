@@ -1,10 +1,11 @@
 :root {
     color-scheme: light dark;
-    --serif-font: "PT Serif", "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052, serif;
+    --serif-font: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052, serif;
     --mono-space-font: SFMono-Regular, ui-monospace, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
     --font-weight-normal: 400;
     --font-weight-bold: 700;
-    --site-width: 66rem;
+    --font-weight-black: 900;
+    --site-width: 70rem;
     --photos-wide: 120rem;
     --border-radius: 0.6rem;
 }
@@ -13,12 +14,12 @@
     :root {
         color-scheme: light;
         --background: #ffffff;
-        --text: #555;
-        --link: #0d88d8;
+        --text: #363636;
+        --link: #007fd0;
         --link-hover: #000;
-        --accent-1: #e7e7e7;
-        --accent-2: #d1d1d1;
-        --accent-3: #ababab;
+        --accent-1: #f8f8f8;
+        --accent-2: #e3e3e3;
+        --accent-3: #636363;
         --highlight: #eeedda;
     }
 }
@@ -26,13 +27,13 @@
 @media (prefers-color-scheme: dark) {
     :root {
         color-scheme: dark;
-        --background: #242424;
+        --background: #1e1e1e;
         --text: #f8f8f8;
-        --link: #45c8f7;
+        --link: #69b3e7;
         --link-hover: #ffffff;
-        --accent-1: #393939;
-        --accent-2: #5a5a5a;
-        --accent-3: #dedede;
+        --accent-1: #303030;
+        --accent-2: #464646;
+        --accent-3: #d2d2d2;
         --highlight: #696b56;
     }
 }
