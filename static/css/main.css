@@ -1143,7 +1143,7 @@ a.tinylytics_webring {
 
 .microblog_collection {
     display: grid !important;
-    grid-template-columns: repeat(3, 1fr) !important;
+    grid-template-columns: repeat(4, 1fr) !important;
     gap: 1rem !important;
     width: 100% !important;
     margin: 3rem auto !important;
@@ -1167,13 +1167,13 @@ a.tinylytics_webring {
 
 @media (max-width: 600px) {
     .microblog_collection {
-        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-columns: repeat(3, 1fr) !important;
     }
 }
 
 @media (max-width: 375px) {
     .microblog_collection {
-        grid-template-columns: repeat(1, 1fr) !important;
+        grid-template-columns: repeat(2, 1fr) !important;
     }
 }
 
