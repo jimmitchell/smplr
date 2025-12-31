@@ -100,7 +100,7 @@ body {
     background: var(--background);
     color: var(--text);
     font-kerning: normal;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: var(--font-weight-normal);
     line-height: 1.5666;
     width: 100%;
@@ -157,21 +157,21 @@ h6 {
 }
 
 h1 {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 h3 {
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 h4,
 h5,
 h6 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 i,
@@ -274,7 +274,7 @@ kbd,
 pre,
 tt {
     font-family: var(--mono-space-font);
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 pre {
@@ -389,7 +389,7 @@ textarea {
     border-radius: var(--border-radius);
     border: 1px solid var(--accent-2);
     color: var(--text);
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin: 4px 1px;
     padding: 8px 12px;
     width: 100%;
@@ -430,7 +430,7 @@ main {
 }
 
 .site-title {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-weight: var(--font-weight-bold);
 }
 
@@ -453,7 +453,7 @@ main {
 .site-nav {
     align-items: center;
     display: flex;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     justify-content: space-between;
     margin: 0 auto;
     max-width: var(--site-width);
@@ -535,7 +535,7 @@ single article {
 
 .page-title,
 .post-title {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     margin: 1rem 0 3rem;
 }
 
@@ -699,7 +699,7 @@ a.category:visited,
     border: 1px solid var(--accent-2);
     color: var(--accent-3);
     display: inline-block;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 1.8;
     margin: 0 1px 5px 0;
     padding: 0 6px;
@@ -789,7 +789,7 @@ a.category:active,
 
 .microblog_fullname {
     display: inline-block;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: var(--font-weight-bold);
     line-height: 30px;
     margin-left: 6px;
@@ -868,7 +868,7 @@ a.category:active,
 }
 
 .microblog_reply_button {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin-bottom: 0.75rem;
     margin-top: -0.75rem;
     text-align: right;
@@ -1314,7 +1314,7 @@ ul.grid img:hover {
 
     .site-nav {
         background: var(--background);
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     .site-nav ul {
