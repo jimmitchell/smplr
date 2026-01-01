@@ -221,7 +221,8 @@ blockquote {
     font-style: italic;
     margin: 4rem 0;
     padding: 0 2rem;
-    font-size: 2.1rem
+    font-size: 2.4rem;
+    line-height: 1.5;
 }
 
 table {
@@ -410,7 +411,7 @@ textarea:focus {
 main {
     margin: 0 auto;
     max-width: var(--site-width);
-    padding: 2rem;
+    padding: 2rem 1.5rem;
 }
 
 .header {
@@ -457,7 +458,7 @@ main {
     justify-content: space-between;
     margin: 0 auto;
     max-width: var(--site-width);
-    padding: 0.75rem 2rem;
+    padding: 2rem 1.5rem;
 }
 
 .site-nav ul {
@@ -535,7 +536,7 @@ single article {
 
 .page-title,
 .post-title {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     margin: 1rem 0 3rem;
 }
 
