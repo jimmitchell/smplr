@@ -411,7 +411,7 @@ textarea:focus {
 main {
     margin: 0 auto;
     max-width: var(--site-width);
-    padding: 2rem 1.5rem;
+    padding: 2rem;
 }
 
 .header {
@@ -458,7 +458,7 @@ main {
     justify-content: space-between;
     margin: 0 auto;
     max-width: var(--site-width);
-    padding: 2rem 1.5rem;
+    padding: 2rem;
 }
 
 .site-nav ul {
