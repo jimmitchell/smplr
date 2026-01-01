@@ -219,7 +219,7 @@ blockquote {
     border-left: 6px solid var(--accent-2);
     color: var(--text);
     font-style: italic;
-    margin: 4rem 0;
+    margin: 4rem 1rem;
     padding: 0 2rem;
     font-size: 2.4rem;
     line-height: 1.5;
@@ -1401,6 +1401,10 @@ ul.grid img:hover {
         margin-left: -1rem;
         margin-right: -1rem;
         width: calc(100% + 2rem);
+    }
+
+    blockquote {
+        margin: 4rem 0;
     }
 
     .to-top {
