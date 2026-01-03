@@ -37,3 +37,44 @@
   font-style: italic;
   font-weight: 900;
 }
+
+/* Proxima Nova */
+@font-face {
+  font-family: "Proxima Nova";
+  font-display: swap;
+  src: url('../fonts/ProximaNova-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  font-display: swap;
+  src: url('../fonts/ProximaNova-Italic.woff2') format('woff2');
+  font-style: italic;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  font-display: swap;
+  src: url('../fonts/ProximaNova-Bold.woff2') format('woff2');
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  font-display: swap;
+  src: url('../fonts/ProximaNova-BoldItalic.woff2') format('woff2');
+  font-style: italic;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  font-display: swap;
+  src: url('../fonts/ProximaNova-Semibold.woff2') format('woff2');
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  font-display: swap;
+  src: url('../fonts/ProximaNova-SemiboldItalic.woff2') format('woff2');
+  font-style: italic;
+  font-weight: 600;
+}

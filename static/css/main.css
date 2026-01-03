@@ -1,10 +1,11 @@
 :root {
     color-scheme: light dark;
     --serif-font: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052, serif;
+    --sans-serif-font: "Proxima Nova", -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
     --mono-space-font: SFMono-Regular, ui-monospace, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
     --font-weight-normal: 400;
     --font-weight-bold: 700;
-    --font-weight-black: 900;
+    --font-weight-semibold: 600;
     --site-width: 72rem;
     --border-radius: 0.6rem;
 }
@@ -82,7 +83,7 @@ p {
 
 html {
     box-sizing: border-box;
-    font-family: var(--serif-font);
+    font-family: var(--sans-serif-font);
     font-size: 10px;
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
@@ -99,7 +100,7 @@ body {
     background: var(--background);
     color: var(--text);
     font-kerning: normal;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: var(--font-weight-normal);
     line-height: 1.7;
     width: 100%;
@@ -156,21 +157,21 @@ h6 {
 }
 
 h1 {
-    font-size: 2.4rem;
-}
-
-h2 {
     font-size: 2.2rem;
 }
 
-h3 {
+h2 {
     font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.8rem;
 }
 
 h4,
 h5,
 h6 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 i,
@@ -221,7 +222,6 @@ blockquote {
     font-style: italic;
     margin: 4rem 1rem;
     padding: 0 2rem;
-    font-size: 2.4rem;
     line-height: 1.5;
 }
 
@@ -275,7 +275,7 @@ kbd,
 pre,
 tt {
     font-family: var(--mono-space-font);
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 pre {
@@ -390,7 +390,7 @@ textarea {
     border-radius: var(--border-radius);
     border: 1px solid var(--accent-2);
     color: var(--text);
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: 4px 1px;
     padding: 8px 12px;
     width: 100%;
@@ -431,7 +431,7 @@ main {
 }
 
 .site-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: var(--font-weight-bold);
 }
 
@@ -454,7 +454,7 @@ main {
 .site-nav {
     align-items: center;
     display: flex;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     justify-content: space-between;
     margin: 0 auto;
     max-width: var(--site-width);
@@ -536,7 +536,7 @@ single article {
 
 .page-title,
 .post-title {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     margin: 1rem 0 3rem;
 }
 
@@ -560,7 +560,7 @@ single article {
 
 .post-date {
     color: var(--accent-3);
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 .sep {
@@ -700,7 +700,7 @@ a.category:visited,
     border: 1px solid var(--accent-2);
     color: var(--accent-3);
     display: inline-block;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     line-height: 1.8;
     margin: 0 1px 5px 0;
     padding: 0 6px;
@@ -708,11 +708,11 @@ a.category:visited,
 }
 
 .category-list button {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 .category-list button .post-count {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-left: 0.1rem;
 }
 
@@ -790,7 +790,7 @@ a.category:active,
 
 .microblog_fullname {
     display: inline-block;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: var(--font-weight-bold);
     line-height: 30px;
     margin-left: 6px;
@@ -814,7 +814,7 @@ a.category:active,
 .microblog_time a,
 .microblog_time a:visited {
     color: var(--accent-3);
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     text-decoration: none;
 }
 
@@ -838,7 +838,7 @@ a.category:active,
 }
 
 .microblog_reply_signin {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-top: 0.75rem;
 }
 
@@ -921,7 +921,7 @@ select:focus {
 .last-mod {
 	color: var(--accent-3);
 	font-style: italic;
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 	display: block;
 	margin-top: 4rem;
 }
@@ -992,7 +992,7 @@ sup a:active {
 }
 
 .footnotes {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin: 4rem 0 0 0;
     color: var(--accent-3);
 }
@@ -1340,7 +1340,7 @@ ul.grid img:hover {
 
     .site-nav {
         background: var(--background);
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     .site-nav ul {
