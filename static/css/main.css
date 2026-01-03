@@ -1,6 +1,5 @@
 :root {
     color-scheme: light dark;
-    --serif-font: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052, serif;
     --sans-serif-font: "Proxima Nova", -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
     --mono-space-font: SFMono-Regular, ui-monospace, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
     --font-weight-normal: 400;
